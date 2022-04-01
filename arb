@@ -1,0 +1,4342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<domains xmlns="http://www.intervoice.com/schema/property/3.0" xmlns:cf="http://intervoice.com/cc-config/resolver"  >
+	<audit savedby="convertConfigSetToString()" timestamp="Wed Dec 01 10:08:33 BOT 2021" />
+	<app-metadata>
+		<meta-property name="icpackage.appname" value="Banesco" />
+		<meta-property name="icpackage.version" value="SC_APP_IS_UNVERSIONED" />
+		<meta-property name="icpackage.workstation" value="DESA-APereira" />
+		<meta-property name="icpackage.ipaddress" value="10.30.1.17" />
+		<meta-property name="icpackage.datetime" value="2018/11/20 11:43:35" />
+		<meta-property name="icpackage.toolversion" value="1.7.0.201112021539" />
+		<meta-property name="icpackage.projectname" value="AplicativoPrincipal" />
+		<meta-property name="war.name" value="Banesco" />
+		<meta-property name="icpackage.username" value="ariana_pereira" />
+	</app-metadata>
+	<config-metadata>
+		<config-property name="name" value="Banesco_Arbol" />
+		<config-property name="generationNumber" value="45" />
+		<config-property name="lastSaved" value="2021/12/01 10:08:33" />
+		<config-property name="firstSaved" value="2021/03/10 18:47:54" />
+	</config-metadata>
+	<domain id="GeneralLib_config_tt_Transacciones.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Transacciones.tt" />
+		<property key="NombreTransaccion" >
+			<app-value value="&quot;ContingenciaPL|ContingenciaATC|ContingenciaPRE|TransferenciaPL|TransferenciaATC|TransferenciaPRE|Estatus|CUBT|UsuarioAS400|BackEnd|VerificaDuracion|DuracionMaxima|VerifHorario|BussinesHours|AudioFueraServ&quot;" />
+			<description value="" />
+		</property>
+		<property key="General" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|N|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333&quot;" />
+			<description value="" />
+		</property>
+		<property key="AMERICAN" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333&quot;" />
+			<description value="" />
+		</property>
+		<property key="CUBT_GestionBloqueos" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|N|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarSaldoTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|S|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarInformacionExtracreditoCompra" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarDisponibleCuotasExtracreditoCompra" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarEstatusSolicitudesTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_UbicarTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_CancelarTDD" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SuspenderTDC" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|N|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SuspenderCheques" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SuspenderChequeras" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ActivarTDC" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_GenerarPINProvisionalTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarRequerimiento" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_CrearRequerimiento" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ImposibilidadUso" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_CambioVoluntarioCUBT" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AutorizarExtracreditoEfectivo" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_BloquearTDD" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarSaldoFideicomiso" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;45283|m0515&amp;45283|m0515&amp;45283|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_DesactivarBloqueoTDD" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ActivarChequeras" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PagoTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarSaldoCredito" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarCuentas" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ActivarDesactivarServicioMovistar" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AvanceEfectivo" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AfiliarServicioMovistar" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ModificarServicioMovistar" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarServicioMovistar" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_TransferenciasCuentasTitular" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConformacionCheques" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_Conformacion|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AutorizarExtracreditoCompra" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PagosRecargasMovistar" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AutorizarTDCComercioAfiliado" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_Autorizaciones|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PagosCreditos" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AutorizarTDCAgenciaViajes" >
+			<oamp-value value="&quot;m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_Autorizaciones|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PagoCANTV" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PosventaMediosPago" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;45288|m0515&amp;45288|m0515&amp;45288|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PosventaFideicomiso" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;45289|m0515&amp;45289|m0515&amp;1147|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_PosventaComercioExterior" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;0000|m0515&amp;0000|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ActivarCOE" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979911|m0515&amp;5979911|m0515&amp;5979911|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ActivarCAI" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979911|m0515&amp;5979911|m0515&amp;5979911|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0010&amp;1111|m0010&amp;2222|m0010&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SoporteBI" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979911|m0515&amp;5979911|m0515&amp;5979911|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_TransferenciasPendientesTerceros" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0038|m0038|m0038|2|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0505&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_GenerarPinTDDyTDC" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|S|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_AutorizarTDCComercioNoAfiliado" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SoporteComercio" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0208&amp;5979914|m0208&amp;5979914|m0208&amp;5979914|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_SolicitarReversoAutorizaciones" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarEstatusDivisas" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_ConsultarDisponibleDivisas" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;5979910|m0515&amp;5979910|m0515&amp;5979910|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0515&amp;3333|m0515&amp;1111|m0515&amp;2222|m0515&amp;3333|1|N|Usuario_General|AS400|S|100|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+		<property key="T_RequerimientoMonedaExtranjera" removable="true" >
+			<oamp-value value="&quot;m0490|m0490|m0490|m0515&amp;1120|m0515&amp;1120|m0515&amp;1120|1|S|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<app-value value="&quot;m0490|m0490|m0490|m0515&amp;1120|m0515&amp;1120|m0515&amp;1120|2|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<default-value value="&quot;m0490|m0490|m0490|m0515&amp;1120|m0515&amp;1120|m0515&amp;1120|2|N|Usuario_General|AS400|S|400|S|HorarioTx1|m0490&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx9.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx9.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_tt_PreguntasSeguridad.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="PreguntasSeguridad.tt" />
+		<property key="idpregunta" >
+			<app-value value="&quot;Tipo_Pregunta(1SINO_2Dato)|Audio|MinimoLongitud|MaximoLongitud&quot;" />
+			<description value="" />
+		</property>
+		<property key="01" >
+			<app-value value="&quot;1|m1148|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="02" >
+			<app-value value="&quot;1|m1149|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="03" >
+			<app-value value="&quot;1|m1150|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="04" >
+			<app-value value="&quot;1|m1151|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="05" >
+			<app-value value="&quot;1|m1152|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="06" >
+			<app-value value="&quot;1|m1153|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="07" >
+			<app-value value="&quot;1|m1154|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="08" >
+			<app-value value="&quot;1|m1155|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="09" >
+			<app-value value="&quot;2|m1156|1|6&quot;" />
+			<description value="" />
+		</property>
+		<property key="10" >
+			<app-value value="&quot;1|m1157|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="11" >
+			<app-value value="&quot;2|m1158|1|6&quot;" />
+			<description value="" />
+		</property>
+		<property key="12" >
+			<app-value value="&quot;2|m1159|1|10&quot;" />
+			<description value="" />
+		</property>
+		<property key="13" >
+			<app-value value="&quot;2|m1160|1|6&quot;" />
+			<description value="" />
+		</property>
+		<property key="14" >
+			<app-value value="&quot;1|m1161|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="15" >
+			<app-value value="&quot;1|m1162|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="16" >
+			<app-value value="&quot;1|m1163|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="17" removable="true" >
+			<oamp-value value="&quot;1|m1600|1|1&quot;" />
+			<app-value value="&quot;1|m1600|1|1&quot;" />
+			<default-value value="&quot;1|m1600|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="18" removable="true" >
+			<oamp-value value="&quot;1|m1601|1|1&quot;" />
+			<app-value value="&quot;1|m1601|1|1&quot;" />
+			<default-value value="&quot;1|m1601|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="19" removable="true" >
+			<oamp-value value="&quot;1|m1602|1|1&quot;" />
+			<app-value value="&quot;1|m1602|1|1&quot;" />
+			<default-value value="&quot;1|m1602|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="20" removable="true" >
+			<oamp-value value="&quot;1|m1603|1|1&quot;" />
+			<app-value value="&quot;1|m1603|1|1&quot;" />
+			<default-value value="&quot;1|m1603|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="21" removable="true" >
+			<oamp-value value="&quot;1|m1604|1|1&quot;" />
+			<app-value value="&quot;1|m1604|1|1&quot;" />
+			<default-value value="&quot;1|m1604|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="22" removable="true" >
+			<oamp-value value="&quot;1|m1605|1|1&quot;" />
+			<app-value value="&quot;1|m1605|1|1&quot;" />
+			<default-value value="&quot;1|m1605|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="23" removable="true" >
+			<oamp-value value="&quot;1|m1606|1|1&quot;" />
+			<app-value value="&quot;1|m1606|1|1&quot;" />
+			<default-value value="&quot;1|m1606|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="24" removable="true" >
+			<oamp-value value="&quot;1|m1607|1|1&quot;" />
+			<app-value value="&quot;1|m1607|1|1&quot;" />
+			<default-value value="&quot;1|m1607|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="25" removable="true" >
+			<oamp-value value="&quot;1|m1608|1|1&quot;" />
+			<app-value value="&quot;1|m1608|1|1&quot;" />
+			<default-value value="&quot;1|m1608|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="26" removable="true" >
+			<oamp-value value="&quot;1|m1609|1|1&quot;" />
+			<app-value value="&quot;1|m1609|1|1&quot;" />
+			<default-value value="&quot;1|m1609|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="27" removable="true" >
+			<oamp-value value="&quot;1|m1610|1|1&quot;" />
+			<app-value value="&quot;1|m1610|1|1&quot;" />
+			<default-value value="&quot;1|m1610|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="28" removable="true" >
+			<oamp-value value="&quot;2|m1611|1|4&quot;" />
+			<app-value value="&quot;1|m1611|1|1&quot;" />
+			<default-value value="&quot;1|m1611|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="29" removable="true" >
+			<oamp-value value="&quot;1|m1612|1|1&quot;" />
+			<app-value value="&quot;1|m1612|1|1&quot;" />
+			<default-value value="&quot;1|m1612|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="30" removable="true" >
+			<oamp-value value="&quot;1|m1613|1|1&quot;" />
+			<app-value value="&quot;1|m1613|1|1&quot;" />
+			<default-value value="&quot;1|m1613|1|1&quot;" />
+			<description value="" />
+		</property>
+		<property key="31" removable="true" >
+			<oamp-value value="&quot;1|m1614|1|1&quot;" />
+			<app-value value="&quot;1|m1614|1|1&quot;" />
+			<default-value value="&quot;1|m1614|1|1&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400DebitCardLib_config_tt_ProductosTDD.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="ProductosTDD.tt" />
+		<property key="Producto" >
+			<app-value value="&quot;PagarTDC|ConsultarSaldodeCredito|ConsultarSaldoMulticuentas|AvanceEfectivo|TransferenciasCuentasTitular|Pagos Creditos|ConsultaPagoCANTV&quot;" />
+			<description value="Descripcion del Producto" />
+		</property>
+		<property key="000" >
+			<app-value value="&quot;N|N|N|N|N|N|N&quot;" />
+			<description value="Error con el producto" />
+		</property>
+		<property key="001" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="Gold Maestro Premiun" />
+		</property>
+		<property key="005" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="Gold banca Privada" />
+		</property>
+		<property key="020" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="Nomina" />
+		</property>
+		<property key="030" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="General" />
+		</property>
+		<property key="040" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="Plan Estrella" />
+		</property>
+		<property key="050" >
+			<app-value value="&quot;S|S|S|N|N|S|N&quot;" />
+			<description value="Juridico" />
+		</property>
+		<property key="055" >
+			<app-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<description value="Juridico" />
+		</property>
+		<property key="060" >
+			<oamp-value value="&quot;S|S|S|S|S|S|S&quot;" />
+			<app-value value="&quot;S|S|S|S|N|S|S&quot;" />
+			<description value="Clasica" />
+		</property>
+		<property key="075" >
+			<app-value value="&quot;N|S|S|N|N|S|S&quot;" />
+			<description value="TDD Universidad Nueva Esparta" />
+		</property>
+		<property key="080" >
+			<app-value value="&quot;N|N|S|N|N|N|S&quot;" />
+			<description value="Pensionados" />
+		</property>
+		<property key="099" >
+			<app-value value="&quot;N|N|S|N|N|N|S&quot;" />
+			<description value="Pensionados" />
+		</property>
+		<property key="100" >
+			<app-value value="&quot;N|N|S|N|N|N|N&quot;" />
+			<description value="Banca Comunitaria" />
+		</property>
+	</domain>
+	<domain id="AS400DebitCardLib_config_tt_AS400ConfiguracionDebitCard.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="AS400ConfiguracionDebitCard.tt" />
+		<property key="Estatus_TDD" >
+			<app-value value="&quot;00|52&quot;" />
+			<description value="Activo Preventivo" />
+		</property>
+		<property key="Clave_Acc_TDD" >
+			<app-value value="&quot;77&quot;" />
+			<description value="Clave de Acceso " />
+		</property>
+		<property key="TDD_ExtraCredEfec" >
+			<app-value value="&quot;000|080|030&quot;" />
+			<description value="Productos TDD invalidos para Extracredito Efectivo" />
+		</property>
+		<property key="TransferirMonitoreoTDD" >
+			<oamp-value value="false" />
+			<app-value value="true" />
+			<description value="Control de transferencia para suspender TDD por consumo no reconocido" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_BINCreditCard.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="BINCreditCard.tt" />
+		<property key="BIN_CENTRO" >
+			<app-value value="&quot;Franquicia|DisponibleExtracredito|ConsultaSaldoTDC|SuspenderTDC|GenerarPIN|ActivarTDC|Estatus|ImposibilidadUso|ExtracreditoEfectivo|PagarTDC|AvanceEfectivo|AutorizarTDCComercioAfiliado|AutorizarTDCAgenciaViajes&quot;" />
+			<description value="Formato" />
+		</property>
+		<property key="121089_ATC" >
+			<app-value value="&quot;&quot;" />
+			<description value="PRIVADA TARJETA DE CREDITO BANESCO EL RECREO PERSONA JURIDICA" />
+		</property>
+		<property key="121099_ATC" >
+			<app-value value="&quot;&quot;" />
+			<description value="PRIVADA TARJETA DE CREDITO BANESCO EL RECREO PERSONA NATURAL" />
+		</property>
+		<property key="123099_ATC" >
+			<app-value value="&quot;&quot;" />
+			<description value="PRIVADA TARJETA DE CREDITO BANESCO SISA INACTIVO" />
+		</property>
+		<property key="370243_ATC" >
+			<oamp-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<app-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO AMERICAN EXPRESS BANESCO" />
+		</property>
+		<property key="370244_ATC" >
+			<oamp-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<app-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO AMERICAN EXPRESS BANESCO" />
+		</property>
+		<property key="371590_ATC" >
+			<oamp-value value="&quot;SAMBIL|S|S|S|S|S|S|S|N|S|S|S|S&quot;" />
+			<app-value value="&quot;SAMBIL|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO SAMBIL CHIP" />
+		</property>
+		<property key="379948_ATC" >
+			<app-value value="&quot;LOCATEL|S|S|S|S|S|S|S|S|S|N|S|S&quot;" />
+			<description value="TARJETA DE CREDITO LOCATEL CHIP" />
+		</property>
+		<property key="405932_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA EMPRESARIAL" />
+		</property>
+		<property key="421463_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA BONIFICACION PAGO AVANCE INACTIVO" />
+		</property>
+		<property key="451384_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA CAJA FAMILIA BANESCO VISA DORADA" />
+		</property>
+		<property key="451385_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA CAJA FAMILIA BANESCO VISA CLASICA" />
+		</property>
+		<property key="451721_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA" />
+		</property>
+		<property key="451722_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA" />
+		</property>
+		<property key="454501_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA REGIONAL" />
+		</property>
+		<property key="454502_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA AFINIDAD CENTRO ITALO" />
+		</property>
+		<property key="454504_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA BANCA COMUNITARIA" />
+		</property>
+		<property key="454511_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA REGIONAL" />
+		</property>
+		<property key="454513_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA PUERTO AZUL" />
+		</property>
+		<property key="454514_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA PUERTO AZUL" />
+		</property>
+		<property key="454517_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="GARANTIZADA TARJETA DE CREDITO BANESCO VISA GARANTIZADA" />
+		</property>
+		<property key="454518_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA EMPRESARIAL" />
+		</property>
+		<property key="454520_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA, CLASICA NACIONAL Y CLASICA USO INTERNACIONAL" />
+		</property>
+		<property key="454530_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA I.P.S.F.A EJERCITO " />
+		</property>
+		<property key="454531_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA I.P.S.F.A ARMADA e I.P.S.F.A F.A.C" />
+		</property>
+		<property key="454532_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA I.P.S.F.A F.A.V" />
+		</property>
+		<property key="454533_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA I.P.S.F.A" />
+		</property>
+		<property key="454534_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA AFINIDAD CENTRO ITALO" />
+		</property>
+		<property key="454560_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA AFINIDAD CLUB RECREACIONAL" />
+		</property>
+		<property key="454561_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA TELCEL" />
+		</property>
+		<property key="454573_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA I.P.S.F.A EJERCITO" />
+		</property>
+		<property key="454574_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA I.P.S.F.A ARMADA" />
+		</property>
+		<property key="454575_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA I.P.S.F.A F.A.V" />
+		</property>
+		<property key="454576_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA I.P.S.F.A F.A.C" />
+		</property>
+		<property key="454578_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA DE AFINIDAD COLEGIO DE ING." />
+		</property>
+		<property key="454579_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA CLASICA DE AFINIDAD CLEMENT" />
+		</property>
+		<property key="454580_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA EMPRESARIAL CONAVANCE" />
+		</property>
+		<property key="454599_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA EMPRESARIAL CONAVANCE" />
+		</property>
+		<property key="491952_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA TELCEL" />
+		</property>
+		<property key="492457_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO VISA DISTRIBUTION INACTIVO" />
+		</property>
+		<property key="496638_ATC" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="TARJETA DE CREDITO VISA BANESCO VISA DORADA" />
+		</property>
+		<property key="540139_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER CARD DORADA" />
+		</property>
+		<property key="540140_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER CARD CLASICA" />
+		</property>
+		<property key="540141_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER CARD CLASICA" />
+		</property>
+		<property key="540167_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="GARANTIZADA TARJETA DE CREDITO BANESCO MASTER GARANTIZADA" />
+		</property>
+		<property key="540470_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER CARD CLASICA FEDER. NAC. GOLF" />
+		</property>
+		<property key="540471_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER CARD DORADA FEDER. NAC. GOLF" />
+		</property>
+		<property key="542094_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD CLASICA PUERTO AZUL" />
+		</property>
+		<property key="542172_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD DORADA PUERTO AZUL" />
+		</property>
+		<property key="542660_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO LA PRIMERA E.A.P. (CLASICA) MASTER CARD" />
+		</property>
+		<property key="542695_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO LA PRIMERA E.A.P. (DORADA) MASTER CARD" />
+		</property>
+		<property key="544194_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MOVISTAR MASTERCARD DORADA" />
+		</property>
+		<property key="544312_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO CAJA FAMILIA BANESCO MASTERCARD DORADA" />
+		</property>
+		<property key="544338_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO CAJA FAMILIA BANESCO MASTERCARD CLASICA" />
+		</property>
+		<property key="546465_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD CLASICA REGIONAL" />
+		</property>
+		<property key="546466_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD DORADA REGIONAL " />
+		</property>
+		<property key="546752_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD CLASICA" />
+		</property>
+		<property key="546753_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD DORADA" />
+		</property>
+		<property key="547887_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO CORPORATIVA MASTER CARD" />
+		</property>
+		<property key="554642_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD DORADA CENTRO SAN IGNACIO" />
+		</property>
+		<property key="554729_ATC" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTERCARD CLASICA CENTRO SAN IGNACIO" />
+		</property>
+		<property key="824400_ATC" >
+			<oamp-value value="&quot;SAMBIL|S|S|S|S|S|S|S|N|S|S|S|S&quot;" />
+			<app-value value="&quot;SAMBIL|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="PRIVADA BANESCO TARJETA DE CREDITO PRIVADA SAMBIL" />
+		</property>
+		<property key="824401_ATC" >
+			<app-value value="&quot;RATTAN|S|S|S|S|S|S|S|S|S|N|S|S&quot;" />
+			<description value="PRIVADA BANESCO TARJETA DE CREDITO PRIVADA RATTAN" />
+		</property>
+		<property key="824402_ATC" >
+			<app-value value="&quot;GRAFFITI|S|S|S|S|S|S|S|S|S|N|S|S&quot;" />
+			<description value="PRIVADA BANESCO TARJETA PRIVADA GRAFFITI" />
+		</property>
+		<property key="824403_ATC" >
+			<app-value value="&quot;&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO DROLANCA" />
+		</property>
+		<property key="824404_ATC" >
+			<app-value value="&quot;LOCATEL|S|S|S|S|S|S|S|S|S|N|S|S&quot;" />
+			<description value="PRIVADA BANESCO TARJETA DE CREDITO LOCATEL" />
+		</property>
+		<property key="824501_ATC" >
+			<app-value value="&quot;&quot;" />
+			<description value="TARJETA DE CREDITO BANESCO BONIFICACION PAGO AVANCE INACTIVO" />
+		</property>
+		<property key="411016_PLA" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO PLATINUM MASTER" />
+		</property>
+		<property key="454515_PLA" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO VISA PLATINUM" />
+		</property>
+		<property key="523751_PLA" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO VISA PLATINUM" />
+		</property>
+		<property key="546704_PLA" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MASTER PLATINUM" />
+		</property>
+		<property key="5467041_PLA" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MOVISTAR MASTER PLATINUM" />
+		</property>
+		<property key="370245_PRE" >
+			<oamp-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<app-value value="&quot;AMERICAN|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO AMERICAN EXPRESS BANESCO BLACK_SIGN" />
+		</property>
+		<property key="422123_PRE" >
+			<app-value value="&quot;VISA|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO BLACK_SIGN SIGNATURE" />
+		</property>
+		<property key="515827_PRE" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO MOVISTAR BLACK_SIGN CARD_BLACK" />
+		</property>
+		<property key="552311_PRE" >
+			<app-value value="&quot;MASTER|S|S|S|S|S|S|S|S|S|S|S|S&quot;" />
+			<description value="CREDITO BANESCO BLACK_SIGN CARD_BLACK" />
+		</property>
+		<property key="422169_ATC" >
+			<app-value value="&quot;VISA|N|N|N|N|N|S|N|N|N|S|N|N&quot;" />
+			<description value="CREDITO TODOTICKET VISA ELECTRON" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.db.client" domain-type="SERVICE" >
+		<description value="Database Client" />
+		<display-name value="DB Client" />
+		<property key="datasourceDefault" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Default data source for use by Database Custom Actions." />
+		</property>
+		<property key="queryTimeout" >
+			<app-value value="15" />
+			<default-value value="15" />
+			<description value="Default database query timeout in seconds." />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx2.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx2.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_NovedadesBloqueoTDC.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="NovedadesBloqueoTDC.tt" />
+		<property key="Bloqueo" >
+			<app-value value="&quot;Novedad|Causal|Texto a Buscar&quot;" />
+			<description value="" />
+		</property>
+		<property key="P" >
+			<app-value value="&quot;562&amp;120|SC&amp;RP_A9_34_76_91|562 ID&amp;120 BLOQUEO&quot;" />
+			<description value="" />
+		</property>
+		<property key="B" >
+			<app-value value="&quot;562|SC|562 ID&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_BloqueosTDC.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="BloqueosTDC.tt" />
+		<property key="Bloqueo" >
+			<app-value value="&quot;Prioridad|Novedad1_Causal1_Novedad2_Causal2_Ruta&quot;" />
+			<description value="" />
+		</property>
+		<property key="M" >
+			<app-value value="&quot;1|____DM&quot;" />
+			<description value="" />
+		</property>
+		<property key="O" >
+			<app-value value="&quot;1|____DM&quot;" />
+			<description value="" />
+		</property>
+		<property key="S" >
+			<app-value value="&quot;1|____DM&quot;" />
+			<description value="" />
+		</property>
+		<property key="B" >
+			<app-value value="&quot;2|562_SC___FU&quot;" />
+			<description value="" />
+		</property>
+		<property key="P" >
+			<app-value value="&quot;3|562_SC_120_RP_FC&amp;562_SC_120_A9_FB&amp;__120_34_OC&amp;__120_76_OC&amp;__120_91_OC&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_tt_AS400ConfiguracionGeneral.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="AS400ConfiguracionGeneral.tt" />
+		<property key="HostName" >
+			<oamp-value value="&quot;host5250&quot;" />
+			<app-value value="&quot;AS400&quot;" />
+			<description value="HostName configurado en el DCE" />
+		</property>
+		<property key="Usuario_General" >
+			<oamp-value value="&quot;BANROBOT14&quot;" />
+			<app-value value="&quot;BANROBOT20&quot;" />
+			<description value="Nombre del usuario general" />
+		</property>
+		<property key="Clave_Usuario_General" >
+			<oamp-value value="&quot;ORINOCO&quot;" />
+			<app-value value="&quot;JIHUGYFT3&quot;" />
+			<description value="Clave del usuario general" />
+		</property>
+		<property key="Usuario_Nocturno" >
+			<oamp-value value="&quot;BANROBOT14&quot;" />
+			<app-value value="&quot;BANROBOT20&quot;" />
+			<description value="Nombre del usuario en ambiente nocturno" />
+		</property>
+		<property key="Clave_Usuario_Nocturno" >
+			<oamp-value value="&quot;ORINOCO&quot;" />
+			<app-value value="&quot;JIHUGYFT3&quot;" />
+			<description value="Clave del usuario en ambiente nocturno" />
+		</property>
+		<property key="Usuario_Autorizaciones" >
+			<oamp-value value="&quot;BANROBOT12&quot;" />
+			<app-value value="&quot;BANROBOT20&quot;" />
+			<description value="Nombre del usuario para autorizaciones" />
+		</property>
+		<property key="Clave_Usuario_Autorizaciones" >
+			<oamp-value value="&quot;NAPOLI&quot;" />
+			<app-value value="&quot;JIHUGYFT3&quot;" />
+			<description value="Clave del usuario para autorizaciones" />
+		</property>
+		<property key="Usuario_Conformacion" >
+			<oamp-value value="&quot;BANROBOT13&quot;" />
+			<app-value value="&quot;BANROBOT20&quot;" />
+			<description value="Nombre del usuario para conformaciones" />
+		</property>
+		<property key="Clave_Usuario_Conformacion" >
+			<oamp-value value="&quot;JAMAICA&quot;" />
+			<app-value value="&quot;JIHUGYFT3&quot;" />
+			<description value="Clave del usuario para conformaciones" />
+		</property>
+		<property key="Timeout_Conexion_General" >
+			<app-value value="10" />
+			<description value="Tiempo de espera maximo para obtener la conexion al AS400" />
+		</property>
+		<property key="Timeout_Respuesta_General" >
+			<app-value value="60" />
+			<description value="Tiempo de espera maximo para obtener respuesta del AS400" />
+		</property>
+	</domain>
+	<domain id="SecurityLib_config_tt_bankPswdStatus.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="bankPswdStatus.tt" />
+		<property key="ESTATUS_CLAVE" >
+			<app-value value="&quot;VALOR_VALIDACION_APROBADA|VALOR_VALIDACION_REPROBADA&quot;" />
+			<description value="" />
+		</property>
+		<property key="01" >
+			<oamp-value value="&quot;02|03&quot;" />
+			<app-value value="&quot;02|0A&quot;" />
+			<description value="" />
+		</property>
+		<property key="11" >
+			<oamp-value value="&quot;12|13&quot;" />
+			<app-value value="&quot;12|1A&quot;" />
+			<description value="" />
+		</property>
+		<property key="21" >
+			<oamp-value value="&quot;22|23&quot;" />
+			<app-value value="&quot;22|2A&quot;" />
+			<description value="" />
+		</property>
+		<property key="31" >
+			<oamp-value value="&quot;32|33&quot;" />
+			<app-value value="&quot;32|3A&quot;" />
+			<description value="" />
+		</property>
+		<property key="41" >
+			<oamp-value value="&quot;02|03&quot;" />
+			<app-value value="&quot;02|0A&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_Middleware.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Middleware.tt" />
+		<property key="Middleware_IP" >
+			<app-value value="&quot;127.0.0.1:8080&quot;" />
+			<description value="IP donde estan desplegados los middlewares utilizados para la comunicacion con OSB" />
+		</property>
+		<property key="Middleware_Creditcard" >
+			<oamp-value value="&quot;MiddlewareCreditCardBanesco&quot;" />
+			<app-value value="&quot;MiddlewareCreditCard&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRCreditCardOutAppSvc" />
+		</property>
+		<property key="Middleware_Customer" >
+			<oamp-value value="&quot;MiddlewareCustomerBanesco&quot;" />
+			<app-value value="&quot;MiddlewareCustomer&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRCustomerViewOutAppSvc" />
+		</property>
+		<property key="Middleware_Customer360" >
+			<oamp-value value="&quot;MiddlewareCustomer360Banesco&quot;" />
+			<app-value value="&quot;MiddlewareCustomer360&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRCustomer360ViewOutAppSvc" />
+		</property>
+		<property key="Middleware_FinancialAccount" >
+			<oamp-value value="&quot;MiddlewareFinancialAccountBanesco&quot;" />
+			<app-value value="&quot;MiddlewareFinancialAccount&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRFinancialAccountOutAppSvc" />
+		</property>
+		<property key="Middleware_Requirement" >
+			<oamp-value value="&quot;MiddlewareRequirementBanesco&quot;" />
+			<app-value value="&quot;MiddlewareRequirement&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRRequirementOutAppSvc" />
+		</property>
+		<property key="Middleware_Security" >
+			<oamp-value value="&quot;MiddlewareSecurityBanesco&quot;" />
+			<app-value value="&quot;MiddlewareSecurity&quot;" />
+			<description value="Nombre del middleware que se comunica con IVRSecurityOutAppSvc" />
+		</property>
+		<property key="Trn_Code" >
+			<oamp-value value="&quot;45&quot;" />
+			<app-value value="&quot;83&quot;" />
+			<description value="Valor para el campo TrnCode" />
+		</property>
+		<property key="Trn_Id" >
+			<oamp-value value="&quot;09&quot;" />
+			<app-value value="&quot;03&quot;" />
+			<description value="Valor para el campo TrnId" />
+		</property>
+		<property key="Supervisor_Code" >
+			<app-value value="&quot;BAN0591W01&quot;" />
+			<description value="Valor para el campo SupervisorCode" />
+		</property>
+		<property key="Operator_Code" >
+			<app-value value="&quot;BAN0591W01&quot;" />
+			<description value="Valor para el campo OperatorCode" />
+		</property>
+		<property key="Bank_Id" >
+			<app-value value="&quot;01&quot;" />
+			<description value="Valor para el campo BankId" />
+		</property>
+		<property key="Agency_Code" >
+			<app-value value="&quot;0591&quot;" />
+			<description value="Valor para el campo AgencyCode" />
+		</property>
+		<property key="Svc_Code" >
+			<app-value value="&quot;mantis&quot;" />
+			<description value="Valor para el campo SvcCode" />
+		</property>
+		<property key="User_Type_COE" >
+			<app-value value="&quot;000&quot;" />
+			<description value="Valor para el campo UserType para COE" />
+		</property>
+		<property key="User_Type_CAI" >
+			<app-value value="&quot;001&quot;" />
+			<description value="Valor para el campo UserType para CAI" />
+		</property>
+		<property key="Trn_Code_COE" >
+			<oamp-value value="&quot;49&quot;" />
+			<app-value value="&quot;83&quot;" />
+			<description value="Valor para el campo TrnCode para COE" />
+		</property>
+		<property key="Trn_Code_CAI" >
+			<oamp-value value="&quot;48&quot;" />
+			<app-value value="&quot;83&quot;" />
+			<description value="Valor para el campo TrnCode para CAI" />
+		</property>
+		<property key="Trn_Id_COE" >
+			<oamp-value value="&quot;02&quot;" />
+			<app-value value="&quot;03&quot;" />
+			<description value="Valor para el campo TrnId para COE" />
+		</property>
+		<property key="Trn_Id_CAI" >
+			<oamp-value value="&quot;01&quot;" />
+			<app-value value="&quot;03&quot;" />
+			<description value="Valor para el campo TrnId para CAI" />
+		</property>
+		<property key="SourceChannelCode" >
+			<app-value value="&quot;CAT&quot;" />
+			<description value="Valor para el campo SourceChannelCode para CAI" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx6.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx6.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="Customer360Lib_config_tt_customer360Timeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="customer360Timeouts.tt" />
+		<property key="check_blocks_and_causals_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="read_customer_products_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="RequirementLib_config_tt_requirementTimeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="requirementTimeouts.tt" />
+		<property key="read_requirement_details_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx8.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx8.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.visual" domain-type="SERVICE" >
+		<description value="Visual Resource Configuration" />
+		<display-name value="Visual Resource" />
+		<property key="visualBaseURL" >
+			<app-value value="/%webappname%/resources/visual" />
+			<default-value value="/%webappname%/resources/visual" />
+			<description value="This attribute specifies the location (URL) of application visual overlay files on a Web server." />
+		</property>
+		<property key="visualNoInputTimeout" >
+			<app-value value="600000" />
+			<default-value value="600000" />
+			<description value="This attribute specifies max waiting period for user input in visual page in milliseconds" />
+		</property>
+		<property key="registrationTimeToLive" >
+			<app-value value="3600000" />
+			<default-value value="3600000" />
+			<description value="This attribute specifies time after which the visual registration will expire in milliseconds" />
+		</property>
+		<property key="visualUrlTimeout" >
+			<app-value value="300000" />
+			<default-value value="300000" />
+			<description value="This attribute specifies timeout of the initial visual URL in milliseconds" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.multimodal" domain-type="SERVICE" >
+		<description value="Multimodal Configuration" />
+		<display-name value="Multimodal" />
+		<property key="enabled" >
+			<app-value value="false" />
+			<default-value value="false" />
+			<description value="This attribute specifies whether Multimodal is enabled or not" />
+		</property>
+		<property key="templateURL" >
+			<app-value value="/%controllerName%" />
+			<default-value value="/%controllerName%" />
+			<description value="This attribute specifies the global application Template URL" />
+		</property>
+		<property key="reattachTimeout" >
+			<app-value value="10000" />
+			<default-value value="10000" />
+			<description value="This attribute specifies the maximum amount of time (ms) in which the caller can re-join the Multimodal application" />
+		</property>
+		<property key="userKeyExpiration" >
+			<app-value value="10000" />
+			<default-value value="10000" />
+			<description value="This attribute specifies the maximum amount of time (ms) that a userKey will be valid" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_Host.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="Host.bh" />
+		<property key="Mon" >
+			<app-value value="02:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="02:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="02:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="02:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="02:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="02:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<oamp-value value="01:00-23:45" />
+			<app-value value="02:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="FinancialAccountLib_config_tt_financialAccountTimeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="financialAccountTimeouts.tt" />
+		<property key="read_customer_account_to" >
+			<oamp-value value="30" />
+			<app-value value="5" />
+			<description value="consulta de cuentas" />
+		</property>
+		<property key="read_check_book_to" >
+			<oamp-value value="30" />
+			<app-value value="5" />
+			<description value="consulta de estatus de chequeras" />
+		</property>
+		<property key="enable_financial_acc_check_book_to" >
+			<oamp-value value="30" />
+			<app-value value="5" />
+			<description value="consulta de comision" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_CertCADIVISolicitudEfectivo.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="CertCADIVISolicitudEfectivo.tt" />
+		<property key="Codigo" >
+			<app-value value="&quot;Audio&quot;" />
+			<description value="Descrip" />
+		</property>
+		<property key="1" >
+			<app-value value="&quot;m0574&quot;" />
+			<description value="Anulada" />
+		</property>
+		<property key="3" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Aprobado por CADIVI" />
+		</property>
+		<property key="5" >
+			<app-value value="&quot;m0579&quot;" />
+			<description value="Enviado a BCV" />
+		</property>
+		<property key="11" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Por Completar" />
+		</property>
+		<property key="12" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Por enviar a BCV" />
+		</property>
+		<property key="13" >
+			<app-value value="&quot;m0570&quot;" />
+			<description value="Recibido BCV" />
+		</property>
+		<property key="15" >
+			<app-value value="&quot;m0570&quot;" />
+			<description value="Clave Asignada" />
+		</property>
+		<property key="16" >
+			<app-value value="&quot;m0580&quot;" />
+			<description value="Clave Ejecutada" />
+		</property>
+		<property key="28" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Por Bloquear" />
+		</property>
+		<property key="50" >
+			<app-value value="&quot;m0578&quot;" />
+			<description value="Por reintegrar BCV" />
+		</property>
+		<property key="51" >
+			<app-value value="&quot;m0578&quot;" />
+			<description value="Reintegrado BCV" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_BloqueosTDD.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="BloqueosTDD.tt" />
+		<property key="Bloqueo_Causal" >
+			<app-value value="&quot;Ruta|RutaRP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_BC" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_BL" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_PE" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_PW" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_SW" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_IA" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_IC" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_IS" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_ID" >
+			<app-value value="&quot;RP|GP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_FP" >
+			<app-value value="&quot;RP|FI&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_FC" >
+			<app-value value="&quot;RP|FC&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_AC" >
+			<app-value value="&quot;RP|IA&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_EC" >
+			<app-value value="&quot;RP|EP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_76" >
+			<app-value value="&quot;PF|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_84" >
+			<app-value value="&quot;PF|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_" >
+			<app-value value="&quot;OC|&quot;" />
+			<description value="" />
+		</property>
+		<property key="51_" >
+			<app-value value="&quot;BD|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_AP   " removable="true" >
+			<oamp-value value="&quot;RP|IA&quot;" />
+			<app-value value="&quot;RP|IA&quot;" />
+			<default-value value="&quot;RP|IA&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_AP" removable="true" >
+			<oamp-value value="&quot;RP|BL&quot;" />
+			<app-value value="&quot;RP|BL&quot;" />
+			<default-value value="&quot;RP|BL&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_34" removable="true" >
+			<oamp-value value="&quot;PF|&quot;" />
+			<app-value value="&quot;PF|&quot;" />
+			<default-value value="&quot;PF|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_35" removable="true" >
+			<oamp-value value="&quot;PF|&quot;" />
+			<app-value value="&quot;PF|&quot;" />
+			<default-value value="&quot;PF|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_83" removable="true" >
+			<oamp-value value="&quot;PF|&quot;" />
+			<app-value value="&quot;PF|&quot;" />
+			<default-value value="&quot;PF|&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_EA" removable="true" >
+			<oamp-value value="&quot;RP|EP&quot;" />
+			<app-value value="&quot;RP|EP&quot;" />
+			<default-value value="&quot;RP|EP&quot;" />
+			<description value="" />
+		</property>
+		<property key="52_EB" removable="true" >
+			<oamp-value value="&quot;RP|EP&quot;" />
+			<app-value value="&quot;RP|EP&quot;" />
+			<default-value value="&quot;RP|EP&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400AccountLib_config_tt_Cuentas.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Cuentas.tt" />
+		<property key="BancaPrivada_MMK" >
+			<app-value value="&quot;Corriente&quot;" />
+			<description value="Cuenta valida para la verificar Banca Privada" />
+		</property>
+		<property key="BancaPrivada_DDA" >
+			<app-value value="&quot;Corriente&quot;" />
+			<description value="Cuenta valida para la verificar Banca Privada" />
+		</property>
+		<property key="BancaPrivada_SAV" >
+			<app-value value="&quot;Ahorro&quot;" />
+			<description value="Cuenta valida para la verificar Banca Privada" />
+		</property>
+		<property key="ExtraEfec_TIPO_CTA_1" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m0228&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m0228&quot;" />
+			<description value="Cuenta de Ahorro para Tx Extracredito Efectivo" />
+		</property>
+		<property key="ExtraEfec_TIPO_CTA_2" >
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0226&quot;" />
+			<description value="Cuenta Corriente para Tx Extracredito Efectivo" />
+		</property>
+		<property key="ExtraEfec_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1541&quot;" />
+			<app-value value="&quot;5816&amp;m1541&quot;" />
+			<description value="Cuenta pensionado para Tx Extracredito Efectivo" />
+		</property>
+		<property key="PagoTDC_TIPO_CTA_1" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m1460|m0357|m1427&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m1459|m0357|m1427&quot;" />
+			<description value="Cuenta de Ahorro para Tx Pagar TDC" />
+		</property>
+		<property key="PagoTDC_TIPO_CTA_2" >
+			<oamp-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m1459|m0356|m1426&quot;" />
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m1460|m0356|m1426&quot;" />
+			<description value="Cuenta Corriente para Tx Pagar TDC" />
+		</property>
+		<property key="PagoTDC_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1542&quot;" />
+			<app-value value="&quot;5816&amp;m1542&quot;" />
+			<description value="Cuenta pensionado para Tx Pagar TDC" />
+		</property>
+		<property key="MultiCtas_TIPO_CTA_1" >
+			<oamp-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0735&quot;" />
+			<app-value value="&quot;Corriente|Money&amp;m0735&quot;" />
+			<description value="Cuenta Corriente para Consulta de saldo multicuentas" />
+		</property>
+		<property key="MultiCtas_TIPO_CTA_2" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr|F.A.L&amp;m0736&quot;" />
+			<app-value value="&quot;Ahorros|F.A.L&amp;m0736&quot;" />
+			<description value="Cuenta de ahorros para Consulta de saldo multicuentas" />
+		</property>
+		<property key="MultiCtas_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m0852&quot;" />
+			<app-value value="&quot;5816&amp;m0852&quot;" />
+			<description value="Cuenta Pensionado para Consulta de saldo multicuentas" />
+		</property>
+		<property key="MultiCtas_TIPO_CTA_4" >
+			<app-value value="&quot;1047|1048|1101|1102&amp;m1356&quot;" />
+			<description value="Cuenta BancaComunitaria para Consulta de saldo multicuentas" />
+		</property>
+		<property key="AvanceEfec_TIPO_CTA_1" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m0757|m1425&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m0757|m1425&quot;" />
+			<description value="Cuenta de ahorros para abonar Avance de Efectivo" />
+		</property>
+		<property key="AvanceEfec_TIPO_CTA_2" >
+			<oamp-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0756|m1424&quot;" />
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0756|m1424&quot;" />
+			<description value="Cuenta corriente para abonar Avance de Efectivo" />
+		</property>
+		<property key="AvanceEfec_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1541&quot;" />
+			<app-value value="&quot;5816&amp;m1541&quot;" />
+			<description value="Cuenta pensionado para abonar Avance de Efectivo" />
+		</property>
+		<property key="TransfeTitular_TIPO_CTA_1" >
+			<oamp-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0216|m1422&amp;m0226|m1424&quot;" />
+			<app-value value="&quot;Corriente|Money&amp;m0216|m1422&amp;m0226|m1424&quot;" />
+			<description value="Cuenta Corriente  para transferencia mismo titular" />
+		</property>
+		<property key="TransfeTitular_TIPO_CTA_2" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m0218|m1423&amp;m0228|m1425&quot;" />
+			<app-value value="&quot;Ahorro|SAV&amp;m0218|m1423&amp;m0228|m1425&quot;" />
+			<description value="Cuenta Ahorro para transferencia mismo titular" />
+		</property>
+		<property key="TransfeTitular_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1540&amp;m1541&quot;" />
+			<app-value value="&quot;5816&amp;m1540&amp;m1541&quot;" />
+			<description value="Cuenta Pensionado para Transferencia mismo titular" />
+		</property>
+		<property key="PagoRecargaMov_TIPO_CTA_1" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m1470|m1467&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m1470|m1467&quot;" />
+			<description value="Cuenta ahorros para Pago Recarga Movistar" />
+		</property>
+		<property key="PagoRecargaMov_TIPO_CTA_2" >
+			<oamp-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte|ELECTRONICA&amp;m1469|m1466&quot;" />
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m1469|m1466&quot;" />
+			<description value="Cuenta corriente para Pago Recarga Movistar" />
+		</property>
+		<property key="PagoRecargaMov_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1542&quot;" />
+			<app-value value="&quot;5816&amp;m1542&quot;" />
+			<description value="Cuenta Pensionado para Pago Recarga Movistar" />
+		</property>
+		<property key="PagoCred_TIPO_CTA_1" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m0357|m1427&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m0357|m1427&quot;" />
+			<description value="Cuenta de ahorro para pagar credito" />
+		</property>
+		<property key="PagoCred_TIPO_CTA_2" >
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0356|m1426&quot;" />
+			<description value="Cuenta corriente para pagar credito" />
+		</property>
+		<property key="PagoCred_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1541&quot;" />
+			<app-value value="&quot;5816&amp;m1541&quot;" />
+			<description value="Cuenta pensionado para pagar credito" />
+		</property>
+		<property key="PagoCANTV_TIPO_CTA_1" >
+			<app-value value="&quot;Corriente|Money|corriente|CORRIENTE|MMK|DDA|Cte&amp;m0356|m1426&quot;" />
+			<description value="Cuenta corriente para pagar telefono CANTV" />
+		</property>
+		<property key="PagoCANTV_TIPO_CTA_2" >
+			<oamp-value value="&quot;SAV|AHORR|Ahorr&amp;m0357|m1427&quot;" />
+			<app-value value="&quot;SAV|AHORR&amp;m0357|m1427&quot;" />
+			<description value="Cuenta de ahorro para pagar telefono CANTV" />
+		</property>
+		<property key="PagoCANTV_TIPO_CTA_3" >
+			<oamp-value value="&quot;5816|1999&amp;m1541&quot;" />
+			<app-value value="&quot;5816&amp;m1541&quot;" />
+			<description value="Cuenta pensionado para pagar telefono CANTV" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx3.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx3.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="CreditCardLib_config_tt_creditCardTimeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="creditCardTimeouts.tt" />
+		<property key="validate_credit_card_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="block_credit_card_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="read_credit_card_balance_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="read_credit_card_detail_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="read_customer_cards_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="validate_credit_card_event_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="assign_pin_credit_card_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx7.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx7.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.autostart" domain-type="SERVICE" allow-add="true" >
+		<description value="URLs that will be automatically run at application startup" />
+		<display-name value="Application Startup Service" />
+	</domain>
+	<domain id="SecurityLib_config_tt_securityTimeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="securityTimeouts.tt" />
+		<property key="answer_security_question_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="authenticate_customer_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="create_phone_banking_unique_code_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="read_unique_phone_banking_code_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="request_security_question_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="update_customer_password_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="update_unique_phone_banking_code_status_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="validate_customer_password_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+		<property key="validate_unique_phone_banking_code_to" >
+			<app-value value="30" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.dce.client" domain-type="SERVICE" >
+		<description value="Datacomm Engine Client" />
+		<display-name value="DCE Client" />
+		<property key="DCEGateKeeperHost" >
+			<app-value value="localhost" />
+			<default-value value="localhost" />
+			<description value="The host name or IP address where DCE Server is installed." />
+		</property>
+		<property key="DCEGateKeeperPort" >
+			<app-value value="4000" />
+			<default-value value="4000" />
+			<description value="The listening port number on DCE Server." />
+		</property>
+	</domain>
+	<domain id="AS400DebitCardLib_config_tt_GruposFideicomisos.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="GruposFideicomisos.tt" />
+		<property key="PRES" >
+			<app-value value="&quot;m0313&quot;" />
+			<description value="Prestaciones Sociales" />
+		</property>
+		<property key="CJAH" >
+			<app-value value="&quot;m0314&quot;" />
+			<description value="Caja de Ahorros" />
+		</property>
+		<property key="FDAH" >
+			<app-value value="&quot;m0315&quot;" />
+			<description value="Fondo de Ahorro" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.configuration.controlcenter.client" domain-type="SERVICE" >
+		<description value="SC Engine - JMS Client for communication with Control Center" />
+		<display-name value="Control Center Client" />
+		<property key="port" javascript-validators="validateIntegerRange(0, 65535);" >
+			<app-value value="60101" />
+			<default-value value="60101" />
+			<description value="JMS port used to communicate with Control Center client" />
+		</property>
+		<property key="RetryConnectionTimeout" javascript-validators="validateIntegerRange(2000, 2147483647);" >
+			<app-value value="30000" />
+			<default-value value="30000" />
+			<description value="Timeout value in milliseconds. Specifies how often a connection attempt is made with the Control Center Client&apos;s JMS Provider" />
+		</property>
+	</domain>
+	<domain id="config_tt_Menus.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Menus.tt" />
+		<property key="Centro_NumeroOpcionRaiz" >
+			<app-value value="&quot;TipoPersona|Estatus|Mensajes|ActivaAutenticacion|MensajeAutenticacion&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_1" >
+			<oamp-value value="&quot;N|1|m0002&amp;m0217|1|m0004&amp;m0006&quot;" />
+			<app-value value="&quot;N|1|m0002&amp;m0217|1|m0004&amp;m0006&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_2" >
+			<oamp-value value="&quot;J|1|m0003&amp;m0219|1|m0005&amp;m0007&quot;" />
+			<app-value value="&quot;J|1|m0003&amp;m0219|1|m0005&amp;m0007&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_3" >
+			<oamp-value value="&quot;NC|0|m1519&amp;m0221|0|&quot;" />
+			<app-value value="&quot;NC|1|m1519&amp;m0221|0|&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_TipoPersona_RutaTransaccion" >
+			<app-value value="&quot;Estatus|Mensajes|NombreTransaccion|AmbienteNocturno&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1" >
+			<oamp-value value="&quot;1|m1506&amp;m0217|M_Posventa|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0" >
+			<oamp-value value="&quot;1|m1359&amp;m0930|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0_1" >
+			<oamp-value value="&quot;0|m0035&amp;m0217|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0_2" >
+			<oamp-value value="&quot;0|m0034&amp;m0219|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0_3" >
+			<oamp-value value="&quot;0|m0036&amp;m0221|T_SoporteBI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0_4" >
+			<oamp-value value="&quot;0|m0037&amp;m0227|T_TransferenciasPendientesTerceros|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_0_8" >
+			<oamp-value value="&quot;0|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1" >
+			<oamp-value value="&quot;1|m0908&amp;m0217|M_SolicitarAtencionComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1_2" >
+			<oamp-value value="&quot;1|m0909&amp;m0219|T_SoporteComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1_3" >
+			<oamp-value value="&quot;0|m0036&amp;m0221|T_SoporteBI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1_4" >
+			<oamp-value value="&quot;0|m0037&amp;m0227|T_TransferenciasPendientesTerceros|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_2" >
+			<oamp-value value="&quot;1|m0850&amp;m0219|T_ConsultarCuentas|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_3" >
+			<oamp-value value="&quot;1|m1407&amp;m0221|T_PosventaMediosPago|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_4" >
+			<oamp-value value="&quot;1|m1508&amp;m0227|T_PosventaFideicomiso|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_1_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2" >
+			<oamp-value value="&quot;1|m1522&amp;m0219|M_OtrasOperaciones|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0" >
+			<oamp-value value="&quot;1|m1359&amp;m0930|M_GestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1" >
+			<oamp-value value="&quot;1|m1359&amp;m0217|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1_1" >
+			<oamp-value value="&quot;0|m0035&amp;m0217|T_ActivarCOE|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1_2" >
+			<oamp-value value="&quot;0|m0034&amp;m0219|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1_3" >
+			<oamp-value value="&quot;0|m0036&amp;m0221|T_SoporteBI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1_4" >
+			<oamp-value value="&quot;0|m0037&amp;m0227|T_TransferenciasPendientesTerceros|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_1_8" >
+			<oamp-value value="&quot;0|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_2" >
+			<oamp-value value="&quot;1|m1090&amp;m0219|T_CambioVoluntarioCUBT|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_3" >
+			<oamp-value value="&quot;1|m0848&amp;m0221|T_GenerarPINProvisionalTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_4" >
+			<oamp-value value="&quot;0|m0923&amp;m0227|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_4_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_4_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_0_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1" >
+			<oamp-value value="&quot;1|m1271&amp;m0217|M_ConsultarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_1" >
+			<oamp-value value="&quot;1|m0850&amp;m0217|T_ConsultarCuentas|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_2" >
+			<oamp-value value="&quot;1|m0923&amp;m0219|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_2_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_2_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_2_3" >
+			<oamp-value value="&quot;1|m1701&amp;m0221|T_RequerimientoMonedaExtranjera|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3" >
+			<oamp-value value="&quot;1|m1357&amp;m0221|M_ConsultarTDCExtracreditoSolicitudes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_1" >
+			<oamp-value value="&quot;1|m0865&amp;m0217|T_ConsultarSaldoTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_2" >
+			<oamp-value value="&quot;1|m0866&amp;m0219|M_ConsultarExtracreditos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_2_1" >
+			<oamp-value value="&quot;1|m0869&amp;m0217|T_AutorizarExtracreditoEfectivo|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_2_2" >
+			<oamp-value value="&quot;1|m0870&amp;m0219|T_ConsultarInformacionExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_2_3" >
+			<oamp-value value="&quot;1|m0871&amp;m0221|T_ConsultarDisponibleCuotasExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuConsultarTDCExtracreditoSolicitudes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_3" >
+			<oamp-value value="&quot;1|m1347&amp;m0221|T_ConsultarEstatusSolicitudesTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_4" >
+			<oamp-value value="&quot;1|m1705&amp;m0227|T_UbicarTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_3_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuConsultarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_4" >
+			<oamp-value value="&quot;1|m0872&amp;m0227|T_ConsultarSaldoCredito|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_5" >
+			<oamp-value value="&quot;1|m0851&amp;m0229|T_ConsultarSaldoFideicomiso|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_1_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2" >
+			<oamp-value value="&quot;1|m1352&amp;m0219|M_SuspenderProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1" >
+			<oamp-value value="&quot;1|m1355&amp;m0217|M_SuspenderBloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_1" >
+			<oamp-value value="&quot;1|m1354&amp;m0217|T_CancelarTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_2" >
+			<oamp-value value="&quot;1|m1165&amp;m0219|M_BloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_2_1" >
+			<oamp-value value="&quot;1|m1650&amp;m0217|T_BloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_2_2" >
+			<oamp-value value="&quot;1|m1651&amp;m0219|T_DesactivarBloqueoTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuSuspenderBloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuSuspenderProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_2" >
+			<oamp-value value="&quot;1|m0841&amp;m0219|T_SuspenderTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_3" >
+			<oamp-value value="&quot;1|m0838&amp;m0221|T_SuspenderCheques|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_4" >
+			<oamp-value value="&quot;1|m0839&amp;m0227|T_SuspenderChequeras|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_2_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3" >
+			<oamp-value value="&quot;1|m0843&amp;m0221|M_ActivarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3_1" >
+			<oamp-value value="&quot;1|m0844&amp;m0217|T_ActivarTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3_2" >
+			<oamp-value value="&quot;1|m0845&amp;m0219|T_ActivarChequeras|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3_3" >
+			<oamp-value value="&quot;1|m1134&amp;m0221|T_ImposibilidadUso|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_3_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4" >
+			<oamp-value value="&quot;1|m0884&amp;m0227|M_PagoAvanceTransferenciaReporte|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_1" >
+			<oamp-value value="&quot;1|m0863&amp;m0217|T_TransferenciasCuentasTitular|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_2" >
+			<oamp-value value="&quot;1|m0886&amp;m0219|M_PagoAvance|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_2_1" >
+			<oamp-value value="&quot;1|m0887&amp;m0217|T_PagoTDC|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_2_2" >
+			<oamp-value value="&quot;1|m0888&amp;m0219|T_AvanceEfectivo|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoAvanceTransferenciaReporte|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3" >
+			<oamp-value value="&quot;1|m0889&amp;m0221|M_PagoServiciosCreditos|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1" >
+			<oamp-value value="&quot;1|m0890&amp;m0217|M_PagoServicios|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_1" >
+			<oamp-value value="&quot;1|m0891&amp;m0217|T_PagoCANTV|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2" >
+			<oamp-value value="&quot;0|m0892&amp;m0219|M_OperacionesPagoMovistar|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1" >
+			<oamp-value value="&quot;1|m0932&amp;m0217|M_OperacionesMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1_1" >
+			<oamp-value value="&quot;1|m0893&amp;m0217|T_AfiliarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1_2" >
+			<oamp-value value="&quot;1|m0894&amp;m0219|T_ConsultarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1_3" >
+			<oamp-value value="&quot;1|m0895&amp;m0221|T_ModificarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1_4" >
+			<oamp-value value="&quot;1|m0896&amp;m0227|T_ActivarDesactivarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuOperacionesPagoMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_2_2" >
+			<oamp-value value="&quot;1|m0898&amp;m0219|T_PagosRecargasMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_1_8" removable="true" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<app-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<default-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_2" >
+			<oamp-value value="&quot;1|m0897&amp;m0219|T_PagosCreditos|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_3_8" removable="true" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<app-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<default-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_4_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5" >
+			<oamp-value value="&quot;0|m0833&amp;m0229|M_AutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1" >
+			<oamp-value value="&quot;0|m0899&amp;m0217|M_AutorizacionesTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1_1" >
+			<oamp-value value="&quot;0|m0900&amp;m0217|T_AutorizarTDCComercioAfiliado|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1_2" >
+			<oamp-value value="&quot;0|m0901&amp;m0219|T_AutorizarTDCAgenciaViajes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1_3" >
+			<oamp-value value="&quot;0|m0902&amp;m0221|T_AutorizarTDCComercioNoAfiliado|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1_4" >
+			<oamp-value value="&quot;0|m0903&amp;m0227|T_SolicitarReversoAutorizaciones|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_2" >
+			<oamp-value value="&quot;0|m0904&amp;m0219|T_AutorizarExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_3" >
+			<oamp-value value="&quot;0|m0905&amp;m0221|T_ConformacionCheques|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_4" >
+			<oamp-value value="&quot;1|m0908&amp;m0227|M_SolicitarAtencionComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_4_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_4_2" >
+			<oamp-value value="&quot;1|m0909&amp;m0219|T_SoporteComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_5_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_2_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_J_GenPin" >
+			<oamp-value value="&quot;1|0&amp;0|T_GenerarPinTDDyTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0" >
+			<oamp-value value="&quot;1|m1353&amp;m0930|M_GestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1" >
+			<oamp-value value="&quot;1|m1359&amp;m0217|T_ActivarCOE|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1_1" >
+			<oamp-value value="&quot;1|m0035&amp;m0217|T_ActivarCOE|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1_2" >
+			<oamp-value value="&quot;0|m0034&amp;m0219|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1_3" >
+			<oamp-value value="&quot;0|m0036&amp;m0221|T_SoporteBI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1_4" >
+			<oamp-value value="&quot;0|m0037&amp;m0227|T_TransferenciasPendientesTerceros|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_1_8" >
+			<oamp-value value="&quot;0|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_2" >
+			<oamp-value value="&quot;1|m1090&amp;m0219|T_CambioVoluntarioCUBT|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_3" >
+			<oamp-value value="&quot;1|m0848&amp;m0221|T_GenerarPINProvisionalTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_4" >
+			<oamp-value value="&quot;0|m0923&amp;m0227|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_4_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_4_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_0_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_1" >
+			<oamp-value value="&quot;1|m0850&amp;m0217|T_ConsultarCuentas|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>		
+		<property key="ATC_N_2" >
+			<oamp-value value="&quot;1|m0923&amp;m0219|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_2_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_2_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_2_3" >
+			<oamp-value value="&quot;1|m1701&amp;m0221|T_RequerimientoMonedaExtranjera|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_2_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_3" >
+			<oamp-value value="&quot;1|m1354&amp;m0221|T_CancelarTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_4" >
+			<oamp-value value="&quot;1|m0863&amp;m0227|T_TransferenciasCuentasTitular|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5" >
+			<oamp-value value="&quot;1|m1522&amp;m0229|M_OtrasOperaciones|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0" >
+			<oamp-value value="&quot;1|m1353&amp;m0930|M_GestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1" >
+			<oamp-value value="&quot;1|m1359&amp;m0217|T_ActivarCOE|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1_1" >
+			<oamp-value value="&quot;1|m0035&amp;m0217|T_ActivarCOE|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1_2" >
+			<oamp-value value="&quot;0|m0034&amp;m0219|T_ActivarCAI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1_3" >
+			<oamp-value value="&quot;0|m0036&amp;m0221|T_SoporteBI|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1_4" >
+			<oamp-value value="&quot;0|m0037&amp;m0227|T_TransferenciasPendientesTerceros|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_1_8" >
+			<oamp-value value="&quot;0|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_2" >
+			<oamp-value value="&quot;1|m1090&amp;m0219|T_CambioVoluntarioCUBT|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_3" >
+			<oamp-value value="&quot;1|m0848&amp;m0221|T_GenerarPINProvisionalTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_4" >
+			<oamp-value value="&quot;0|m0923&amp;m0227|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_4_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_4_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuGestionarClavesRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_0_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1" >
+			<oamp-value value="&quot;1|m1271&amp;m0217|M_ConsultarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_1" >
+			<oamp-value value="&quot;1|m0850&amp;m0217|T_ConsultarCuentas|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_2" >
+			<oamp-value value="&quot;1|m0923&amp;m0219|M_ConsultarCrearRequerimientos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_2_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_2_2" >
+			<oamp-value value="&quot;1|m0057&amp;m0219|T_CrearRequerimiento|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_2_3" >
+			<oamp-value value="&quot;1|m1701&amp;m0221|T_RequerimientoMonedaExtranjera|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3" >
+			<oamp-value value="&quot;1|m1357&amp;m0221|M_ConsultarTDCExtracreditoSolicitudes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_1" >
+			<oamp-value value="&quot;1|m0865&amp;m0217|T_ConsultarSaldoTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_2" >
+			<oamp-value value="&quot;1|m0866&amp;m0219|M_ConsultarExtracreditos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_2_1" >
+			<oamp-value value="&quot;1|m0869&amp;m0217|T_AutorizarExtracreditoEfectivo|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_2_2" >
+			<oamp-value value="&quot;1|m0870&amp;m0219|T_ConsultarInformacionExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_2_3" >
+			<oamp-value value="&quot;1|m0871&amp;m0221|T_ConsultarDisponibleCuotasExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuConsultarTDCExtracreditoSolicitudes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_3" >
+			<oamp-value value="&quot;1|m1347&amp;m0221|T_ConsultarEstatusSolicitudesTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_4" >
+			<oamp-value value="&quot;1|m1705&amp;m0227|T_UbicarTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_3_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuConsultarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_4" >
+			<oamp-value value="&quot;1|m0872&amp;m0227|T_ConsultarSaldoCredito|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_5" >
+			<oamp-value value="&quot;1|m0851&amp;m0229|T_ConsultarSaldoFideicomiso|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_1_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2" >
+			<oamp-value value="&quot;1|m1352&amp;m0219|M_SuspenderProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1" >
+			<oamp-value value="&quot;1|m1355&amp;m0217|M_SuspenderBloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_1" >
+			<oamp-value value="&quot;1|m1354&amp;m0217|T_CancelarTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_2" >
+			<oamp-value value="&quot;1|m1165&amp;m0219|M_BloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_2_1" >
+			<oamp-value value="&quot;1|m1650&amp;m0217|T_BloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_2_2" >
+			<oamp-value value="&quot;1|m1651&amp;m0219|T_DesactivarBloqueoTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuSuspenderBloquearDesbloquearTDD|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuSuspenderProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_2" >
+			<oamp-value value="&quot;1|m0841&amp;m0219|T_SuspenderTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_3" >
+			<oamp-value value="&quot;1|m0838&amp;m0221|T_SuspenderCheques|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_4" >
+			<oamp-value value="&quot;1|m0839&amp;m0227|T_SuspenderChequeras|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_2_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3" >
+			<oamp-value value="&quot;1|m0843&amp;m0221|M_ActivarProductos|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3_1" >
+			<oamp-value value="&quot;1|m0844&amp;m0217|T_ActivarTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3_2" >
+			<oamp-value value="&quot;1|m0845&amp;m0219|T_ActivarChequeras|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3_3" >
+			<oamp-value value="&quot;1|m1134&amp;m0221|T_ImposibilidadUso|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_3_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4" >
+			<oamp-value value="&quot;1|m0884&amp;m0227|M_PagoAvanceTransferenciaReporte|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_1" >
+			<oamp-value value="&quot;1|m0863&amp;m0217|T_TransferenciasCuentasTitular|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_2" >
+			<oamp-value value="&quot;1|m0886&amp;m0219|M_PagoAvance|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_2_1" >
+			<oamp-value value="&quot;1|m0887&amp;m0217|T_PagoTDC|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_2_2" >
+			<oamp-value value="&quot;1|m0888&amp;m0219|T_AvanceEfectivo|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_2_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoAvanceTransferenciaReporte|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3" >
+			<oamp-value value="&quot;1|m0889&amp;m0221|M_PagoServiciosCreditos|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1" >
+			<oamp-value value="&quot;1|m0890&amp;m0217|M_PagoServicios|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_1" >
+			<oamp-value value="&quot;1|m0891&amp;m0217|T_PagoCANTV|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2" >
+			<oamp-value value="&quot;0|m0892&amp;m0219|M_OperacionesPagoMovistar|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1" >
+			<oamp-value value="&quot;1|m0932&amp;m0217|M_OperacionesMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1_1" >
+			<oamp-value value="&quot;1|m0893&amp;m0217|T_AfiliarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1_2" >
+			<oamp-value value="&quot;1|m0894&amp;m0219|T_ConsultarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1_3" >
+			<oamp-value value="&quot;1|m0895&amp;m0221|T_ModificarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1_4" >
+			<oamp-value value="&quot;1|m0896&amp;m0227|T_ActivarDesactivarServicioMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuOperacionesPagoMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_2" >
+			<oamp-value value="&quot;1|m0898&amp;m0219|T_PagosRecargasMovistar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_2_8" >
+			<oamp-value value="&quot;1|m0898&amp;m0219|R_PagoServicios|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_1_8" removable="true" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<app-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<default-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServicios|S&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_2" >
+			<oamp-value value="&quot;1|m0897&amp;m0219|T_PagosCreditos|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_3_8" removable="true" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<app-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<default-value value="&quot;1|m0495&amp;m0238|R_MenuPagoServiciosCreditos|S&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_4_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5" >
+			<oamp-value value="&quot;0|m0833&amp;m0229|M_AutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1" >
+			<oamp-value value="&quot;0|m0899&amp;m0217|M_AutorizacionesTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1_1" >
+			<oamp-value value="&quot;0|m0900&amp;m0217|T_AutorizarTDCComercioAfiliado|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1_2" >
+			<oamp-value value="&quot;0|m0901&amp;m0219|T_AutorizarTDCAgenciaViajes|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1_3" >
+			<oamp-value value="&quot;0|m0902&amp;m0221|T_AutorizarTDCComercioNoAfiliado|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1_4" >
+			<oamp-value value="&quot;0|m0903&amp;m0227|T_SolicitarReversoAutorizaciones|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_1_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_2" >
+			<oamp-value value="&quot;0|m0904&amp;m0219|T_AutorizarExtracreditoCompra|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_3" >
+			<oamp-value value="&quot;0|m0905&amp;m0221|T_ConformacionCheques|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_4" >
+			<oamp-value value="&quot;1|m0908&amp;m0227|M_SolicitarAtencionComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_4_1" >
+			<oamp-value value="&quot;1|m0926&amp;m0217|T_ConsultarRequerimiento|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_4_2" >
+			<oamp-value value="&quot;1|m0909&amp;m0219|T_SoporteComercio|N&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_4_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuAutorizacionesAtencionConformacion|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_5_5_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_8" >
+			<oamp-value value="&quot;1|m0495&amp;m0238|R_MenuPrincipal|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_9" >
+			<oamp-value value="&quot;1|m0239&amp;m0240|F_Finalizar|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+		<property key="ATC_N_GenPin" >
+			<oamp-value value="&quot;1|0&amp;0|T_GenerarPinTDDyTDC|S&quot;" />
+			<app-value value="&quot;&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.voice" domain-type="SERVICE" >
+		<description value="Voice Control Resource Configuration" />
+		<display-name value="Voice Control Resource" />
+		<property key="language" >
+			<app-value value="en" />
+			<default-value value="en" />
+			<description value="This attribute specifies the spoken language" />
+		</property>
+		<property key="country" >
+			<app-value value="US" />
+			<default-value value="US" />
+			<description value="This attribute specifies the spoken country" />
+		</property>
+		<property key="speaker" >
+			<app-value value="default" />
+			<default-value value="default" />
+			<description value="This attribute specifies the speaker" />
+		</property>
+		<property key="mode" displayable="false" >
+			<app-value value="BaseURL" />
+			<default-value value="BaseURL" />
+			<description value="This attribute specifies the mode used to retrieve media" />
+		</property>
+		<property key="audioBaseURL" >
+			<app-value value="/%webappname%/resources/audio" />
+			<default-value value="/%webappname%/resources/audio" />
+			<description value="This attribute specifies the location (URL) of application message files on a Web server." />
+		</property>
+		<property key="audioSet" displayable="false" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="This attribute specifies the application audio set" />
+		</property>
+		<property key="systemAudioBaseURL" >
+			<app-value value="/%webappname%/resources/audio/system" />
+			<default-value value="/%webappname%/resources/audio/system" />
+			<description value="This attribute specifies the location (URL) of system message files on a Web server." />
+		</property>
+		<property key="grammarBaseURL" >
+			<app-value value="/%webappname%/resources/grammars" />
+			<default-value value="/%webappname%/resources/grammars" />
+			<description value="This attribute specifies the location (URL) of grammar files on a Web server." />
+		</property>
+		<property key="grammarSet" displayable="false" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="This attribute specifies the application grammar set" />
+		</property>
+		<property key="resourcesHttpHeaders" >
+			<app-value value="Cache-Control: max-age=86400" />
+			<default-value value="Cache-Control: max-age=86400" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+		<property key="mediaHub_host" displayable="false" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+		<property key="mediaHub_port" displayable="false" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+		<property key="mediaHub_sysPsId" displayable="false" >
+			<app-value value="%webappname%" />
+			<default-value value="%webappname%" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+		<property key="mediaHub_spknDialect" displayable="false" >
+			<app-value value="1" />
+			<default-value value="1" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+		<property key="mediaHub_ttsVendorVersion" displayable="false" >
+			<app-value value="RealSpeak4.5" />
+			<default-value value="RealSpeak4.5" />
+			<description value="This property is reserved for future use. Do NOT change." />
+		</property>
+	</domain>
+	<domain id="LogLib_config_tt_GestionLogs.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="GestionLogs.tt" />
+		<property key="Activo_Log_Aplicacion_ATC" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de la aplicacion ATC" />
+		</property>
+		<property key="Activo_Log_Aplicacion_Platinum" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de la aplicacion Platinum" />
+		</property>
+		<property key="Activo_Log_Aplicacion_Premium" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de la aplicacion Premium" />
+		</property>
+		<property key="Activo_Log_Transaccional" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log transaccional" />
+		</property>
+		<property key="Activo_Registro_Pantallas" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el registro de la captura de pantallas del AS400" />
+		</property>
+		<property key="Activo_Log_GeneralLib" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de AS400GeneralLib" />
+		</property>
+		<property key="Activo_Log_CreditCardLib" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de AS400CreditCardLib" />
+		</property>
+		<property key="Activo_Log_DebitCardLib" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de AS400DebitCardLib" />
+		</property>
+		<property key="Activo_Log_AccountLib" >
+			<app-value value="true" />
+			<description value="true o false. Indica si esta activo el log de AS400AccountLib" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_CertCADIVIViajesInternet.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="CertCADIVIViajesInternet.tt" />
+		<property key="Codigo" >
+			<app-value value="&quot;Audio&quot;" />
+			<description value="Descrip" />
+		</property>
+		<property key="1" >
+			<app-value value="&quot;m0574&quot;" />
+			<description value="Anulada" />
+		</property>
+		<property key="3" >
+			<app-value value="&quot;m1316&quot;" />
+			<description value="Aprobada por CADIVI" />
+		</property>
+		<property key="6" >
+			<app-value value="&quot;m0571&quot;" />
+			<description value="Rechazada" />
+		</property>
+		<property key="8" >
+			<app-value value="&quot;m0573&quot;" />
+			<description value="Reparo por CADIVI" />
+		</property>
+		<property key="10" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Completado" />
+		</property>
+		<property key="11" >
+			<app-value value="&quot;m0572&quot;" />
+			<description value="Por Completar" />
+		</property>
+		<property key="19" >
+			<app-value value="&quot;m0579&quot;" />
+			<description value="Confirmado Banco Internet" />
+		</property>
+		<property key="20" >
+			<app-value value="&quot;m0573&quot;" />
+			<description value="Reparo area central" />
+		</property>
+		<property key="52" >
+			<app-value value="&quot;m0576&quot;" />
+			<description value="Cambio de operador solicitado" />
+		</property>
+		<property key="53" >
+			<app-value value="&quot;m0576&quot;" />
+			<description value="Cambio de operador realizado" />
+		</property>
+		<property key="78" >
+			<app-value value="&quot;m0575&quot;" />
+			<description value="Cupo de TDC bloqueado por CADIVI" />
+		</property>
+		<property key="79" >
+			<app-value value="&quot;m0571&quot;" />
+			<description value="Res 412 Prepagada" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.http.client" domain-type="SERVICE" >
+		<description value="HTTP Client" />
+		<display-name value="HTTP Client" />
+		<property key="HTTPVersion" >
+			<app-value value="1.1" />
+			<default-value value="1.1" />
+			<description value="The effective HTTP version. (1.0 or 1.1)" />
+		</property>
+		<property key="CookiePolicy" >
+			<app-value value="RFC2109" />
+			<default-value value="RFC2109" />
+			<description value="The specification of the cookie policy. (RFC2109,RFC2965,Netscape,Compatible, none." />
+		</property>
+		<property key="ProxySupport" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Proxy Support:None,HttpProxy,Tunnel" />
+		</property>
+		<property key="ProxyAddress" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Fully Qualified Host Name" />
+		</property>
+		<property key="ProxyPort" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Port Number" />
+		</property>
+		<property key="ProxyUserName" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Proxy User Name" />
+		</property>
+		<property key="ProxyPassword" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Proxy Password" />
+		</property>
+		<property key="ProxyAuthentication" >
+			<app-value value="None" />
+			<default-value value="None" />
+			<description value="Proxy Authentication:None,Basic,Digest,NTLM" />
+		</property>
+		<property key="ProxyNTLMOriginatingHostName" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Proxy NTLM Originating Host Name" />
+		</property>
+		<property key="ProxyNTLMDomain" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Proxy NTLM Domain" />
+		</property>
+		<property key="ProxyExemptURLs" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="URLs that are exempt from the proxy" />
+		</property>
+		<property key="ServerAuthentication" >
+			<app-value value="None" />
+			<default-value value="None" />
+			<description value="Proxy Authentication:None,Basic,Digest,NTLM" />
+		</property>
+		<property key="ServerNTLMOriginatingHostName" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Server NTLM Originating Host Name" />
+		</property>
+		<property key="ServerNTLMDomain" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Server NTLM Domain" />
+		</property>
+		<property key="RedirectionMax" >
+			<app-value value="0" />
+			<default-value value="0" />
+			<description value="Maximum number of redirections allowed for a HTTP connection" />
+		</property>
+		<property key="SSLCertificateStore" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Path location to the SSL Certification Store" />
+		</property>
+		<property key="SSLCertificatePassword" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="SSL Certification Store password" />
+		</property>
+		<property key="SSLTrustStore" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Path location to the SSL Trust Store" />
+		</property>
+		<property key="SSLTrustPassword" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="SSL Trust Store password" />
+		</property>
+		<property key="ConnectionTimeout" >
+			<app-value value="0" />
+			<default-value value="0" />
+			<description value="Connection Timeout in seconds" />
+		</property>
+		<property key="SignCertificateAlias" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Private key alias to be used for digitally signing the SOAP message" />
+		</property>
+		<property key="PWCBHandlerClass" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="Callback class used to provide the password required to create the UsernameToken or to sign the message" />
+		</property>
+		<property key="EncryptionUser" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="User&apos;s name for encrypting the SOAP message" />
+		</property>
+		<property key="TokenUser" >
+			<app-value value="" />
+			<default-value value="" />
+			<description value="User&apos;s name for creating the UsernameToken" />
+		</property>
+		<property key="CertificateLevel" >
+			<app-value value="Default" />
+			<default-value value="Default" />
+			<description value="Requested SSL/TLS Version Negotiation" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_CodigosErroresDinamicos.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="CodigosErroresDinamicos.tt" />
+		<property key="Transaccion_Codigo" >
+			<app-value value="&quot;Mensaje|Accion&quot;" />
+			<description value="Descripcion" />
+		</property>
+		<property key="suspenderTDC_00" >
+			<app-value value="&quot;m1141&amp;m1173|F&quot;" />
+			<description value="TDC sometida a reexpedicion" />
+		</property>
+		<property key="suspenderTDC_01" >
+			<app-value value="&quot;m1141&amp;m0505|T&quot;" />
+			<description value="Bloqueo no permitido" />
+		</property>
+		<property key="suspenderTDC_02" >
+			<app-value value="&quot;m1141&amp;m1173|F&quot;" />
+			<description value="" />
+		</property>
+		<property key="suspenderTDC_03" >
+			<app-value value="&quot;m1141&amp;m1173|F&quot;" />
+			<description value="Ya existe solicitud pendiente" />
+		</property>
+		<property key="suspenderTDC_04" >
+			<app-value value="&quot;m1141&amp;m1143|F&quot;" />
+			<description value="Cantidad de moras mayor a la maximo" />
+		</property>
+		<property key="suspenderTDC_05" >
+			<app-value value="&quot;m1141&amp;m1143|F&quot;" />
+			<description value="Altura de mora mayor al maximo" />
+		</property>
+		<property key="suspenderTDC_06" >
+			<app-value value="&quot;m1141&amp;m1143|F&quot;" />
+			<description value="Porcentaje Sobregiro mayor a maximo permitido" />
+		</property>
+		<property key="suspenderTDC_OTRO" >
+			<app-value value="&quot;m1141&amp;m0505|T&quot;" />
+			<description value="Blanco o errores sin definir en la tabla" />
+		</property>
+		<property key="pagoMovs_V01" >
+			<app-value value="&quot;m0412|B|NoExitosa-CanalNoHabilitado&quot;" />
+			<description value="Canal no habilitado para realizar operaciones" />
+		</property>
+		<property key="pagoMovs_V05" >
+			<app-value value="&quot;m1375|B|NoExitosa-IndentificadorEnListaNegra&quot;" />
+			<description value="Numero bloqueado para transacciones" />
+		</property>
+		<property key="pagoMovs_V16" >
+			<app-value value="&quot;m0374|A|NoExitosa-IdentificadorNoAfiliadoAlServicio&quot;" />
+			<description value="El numero de identificador no se encuentra afiliado al servicio" />
+		</property>
+		<property key="pagoMovs_V22" >
+			<app-value value="&quot;m0411|B|NoExitosa-IdentificadorDesactivado&quot;" />
+			<description value="El identificador que intenta pagar se encuentra desactivado" />
+		</property>
+		<property key="pagoMovs_V24" >
+			<app-value value="&quot;m0410|B|NoExitosa-ServicioNoDisponibleEnHorario&quot;" />
+			<description value="El pago de este servicio no esta disponible en este horario" />
+		</property>
+		<property key="pagoMovs_V26" >
+			<app-value value="&quot;m0408|B|NoExitosa-ExcedeCantidadPagosPermitidos&quot;" />
+			<description value="Este pago excede la cantidad de pagos permitidos en el periodo" />
+		</property>
+		<property key="pagoMovs_V27" >
+			<app-value value="&quot;m0260|C|NoExitosa-MontoMayorADeuda&quot;" />
+			<description value="Monto a pagar es mayor al monto de la deuda" />
+		</property>
+		<property key="pagoMovs_V28" >
+			<app-value value="&quot;m0432|E|NoExitosa-MontoExcedePermitidoServicio&quot;" />
+			<description value="El monto que desea pagar excede el monto permitido por el servicio" />
+		</property>
+		<property key="pagoMovs_V29" >
+			<app-value value="&quot;m0425|D|NoExitosa-SaldoDisponibleNoSuficiente&quot;" />
+			<description value="Cuenta no posee saldo suficiente para realizar la operacion" />
+		</property>
+		<property key="pagoMovs_V30" >
+			<app-value value="&quot;0|EXITO|Exitosa&quot;" />
+			<description value="Su solicitud se ha realizado exitosamente" />
+		</property>
+		<property key="pagoMovs_V31" >
+			<app-value value="&quot;m0407|B|NoExitosa-IdentificadorServicioDeshabilitado&quot;" />
+			<description value="El identificador esta asociado a un servicio deshabilitado" />
+		</property>
+		<property key="pagoMovs_V38" >
+			<app-value value="&quot;m0431|E|NoExitosa-MontoExcedePermitidoCanal&quot;" />
+			<description value="Monto excede maximo permitido por el canal" />
+		</property>
+		<property key="pagoMovs_OTRO" >
+			<app-value value="&quot;0|ERROR|ErrorSistema-CodigoNoEncontradoEnTT&quot;" />
+			<description value="Blanco o errores sin definir en la tabla" />
+		</property>
+		<property key="MsjESATPPV2_1" >
+			<app-value value="&quot;Cliente se encuentra asignado|Enter&quot;" />
+			<description value="Frase de mensaje en ESATPPV2 y comando a enviar" />
+		</property>
+		<property key="MsjESATPPV2_2" >
+			<app-value value="&quot;actualizar datos de|F3&quot;" />
+			<description value="Frase de mensaje en ESATPPV2 y comando a enviar" />
+		</property>
+		<property key="MsjESATPPV2_3" >
+			<oamp-value value="&quot;Este cliente debe actualizar|Enter&quot;" />
+			<app-value value="&quot;cliente debe actualizar|Enter&quot;" />
+			<description value="" />
+		</property>
+		<property key="MsjESATPPV2_4" >
+			<oamp-value value="&quot;CLIENTE TIENES LAS SIGUIENTES|F3&quot;" />
+			<app-value value="&quot;TIENE LAS SIGUIENTES|F3&quot;" />
+			<description value="" />
+		</property>
+		<property key="MsjESATPPV2_5" >
+			<oamp-value value="&quot;El tarjetahabiente presenta mas|Enter&quot;" />
+			<app-value value="&quot;tarjetahabiente presenta mas|Enter&quot;" />
+			<description value="" />
+		</property>
+		<property key="pagoMovs_858" removable="true" >
+			<oamp-value value="&quot;m0374|B&quot;" />
+			<app-value value="&quot;m0374|B&quot;" />
+			<default-value value="&quot;m0374|B&quot;" />
+			<description value="" />
+		</property>
+		<property key="pagoMovs_764" removable="true" >
+			<oamp-value value="&quot;m1350|B&quot;" />
+			<app-value value="&quot;m1350|B&quot;" />
+			<default-value value="&quot;m1350|B&quot;" />
+			<description value="" />
+		</property>
+		<property key="pagoMovs_765" removable="true" >
+			<oamp-value value="&quot;m1350|B&quot;" />
+			<app-value value="&quot;m1350|B&quot;" />
+			<default-value value="&quot;m1350|B&quot;" />
+			<description value="" />
+		</property>
+		<property key="MsjESATPPV2_6 " removable="true" >
+			<oamp-value value="&quot;CLIENTE TIENES LAS SIGUIENTES|F3&quot;" />
+			<app-value value="&quot;CLIENTE TIENES LAS SIGUIENTES|F3&quot;" />
+			<default-value value="&quot;CLIENTE TIENES LAS SIGUIENTES|F3&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.cti.client" domain-type="SERVICE" >
+		<description value="Computer-Telephony Integration Client" />
+		<display-name value="CTI Client" />
+		<property key="endPointURL" javascript-validators="validateUrl()" >
+			<app-value value="http://localhost:8080/axis/services/WSGatewayListener" />
+			<default-value value="http://mycti:8080/axis/services/WSGatewayListener" />
+			<description value="URL for the CTI Gateway Web Service" />
+		</property>
+		<property key="useHttp" javascript-validators="validateBoolean();" >
+			<app-value value="false" />
+			<default-value value="false" />
+			<description value="Set to &apos;true&apos; to use HttpVOX rather than CTI Gateway. (Allowed values: true | false)" />
+		</property>
+		<property key="httpEndPoint" javascript-validators="validateUrl()" >
+			<app-value value="http://httpVOX:8080/httpvox_htm" />
+			<default-value value="http://myHttpVOX:8080/httpvox_htm" />
+			<description value="URL for the HttpVOX service" />
+		</property>
+		<property key="useMediaServerHost" javascript-validators="validateBoolean();" >
+			<app-value value="false" />
+			<default-value value="false" />
+			<description value="Set to &apos;true&apos; to use Media Server hostname in CTI Gateway URL. (Allowed values: true | false)" />
+		</property>
+		<property key="ctiPortNum" javascript-validators="validateIntegerRange(0, 65535);" >
+			<app-value value="8080" />
+			<default-value value="8080" />
+			<description value="Port number for the CTI service" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.voice.resourceURLs" domain-type="SERVICE" allow-add="true" >
+		<description value="Voice Control Resource URLs" />
+		<display-name value="Voice Control Resource URLs" />
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx4.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx4.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_Proveedores.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Proveedores.tt" />
+		<property key="RIF_MOVISTAR" >
+			<app-value value="&quot;J003439940&quot;" />
+			<description value="Rif usado en Operaciones Movistar" />
+		</property>
+		<property key="TDD_MOVISTAR" >
+			<app-value value="&quot;000|020|030&quot;" />
+			<description value="Productos TDD invalidos para Operaciones Movistar" />
+		</property>
+		<property key="MontoMin_RecargaPago_Movistar" >
+			<app-value value="10" />
+			<description value="Monto minimo permitido para el monto de recargas o pagos del servicio Movistar" />
+		</property>
+		<property key="MontoMax_RecargaPago_Movistar" >
+			<app-value value="99999" />
+			<description value="Monto maximo permitido para el monto de recargas o pagos del servicio Movistar" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx10.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx10.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.ang.client" domain-type="SERVICE" >
+		<description value="Advanced Notification Gateway" />
+		<display-name value="ANG Client" />
+		<property key="Url" javascript-validators="validateUrl()" >
+			<app-value value="http://127.0.0.1:8080/AdvancedNotificationGateway/postAlert" />
+			<default-value value="http://127.0.0.1:8080/AdvancedNotificationGateway/postAlert" />
+			<description value="Http Address of ANG location." />
+		</property>
+		<property key="ConnectionTimeout" javascript-validators="validateIntegerRange(10000, 50000);" >
+			<app-value value="10000" />
+			<default-value value="10000" />
+			<description value="Timeout value is in milliseconds, to be used when opening a communications link to the resource referenced by ANG URLConnection.(10000 - 50000)" />
+		</property>
+		<property key="ReadTimeout" javascript-validators="validateIntegerRange(10000, 50000);" >
+			<app-value value="10000" />
+			<default-value value="10000" />
+			<description value="Timeout value is in milliseconds. A non-zero value specifies the timeout when reading from Input stream when a connection is established to ANG.(10000 - 50000)" />
+		</property>
+	</domain>
+	<domain id="CustomerLib_config_tt_customerTimeouts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="customerTimeouts.tt" />
+		<property key="read_customer_data_to" >
+			<oamp-value value="30" />
+			<app-value value="5" />
+			<description value="" />
+		</property>
+	</domain>
+	<domain id="AS400DebitCardLib_config_tt_Creditos.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Creditos.tt" />
+		<property key="Grupo" >
+			<app-value value="&quot;TipodeCredito|AudioC|AudioP|Descripcion&quot;" />
+			<description value="" />
+		</property>
+		<property key="CRED1" >
+			<app-value value="&quot;Vehiculos&amp;Vehiculo1&amp;Vehiculo2|m0692|m1496|VEHICULOS&quot;" />
+			<description value="VEHICULOS" />
+		</property>
+		<property key="CRED2" >
+			<app-value value="&quot;Hipotecario&amp;Credito Vivienda|m0693|m1497|HIPOTECARIO&quot;" />
+			<description value="HIPOTECARIO" />
+		</property>
+		<property key="CRED3" >
+			<app-value value="&quot;Extracredito|m0694|m1498|EXTRACREDITO&quot;" />
+			<description value="EXTRACREDITO" />
+		</property>
+		<property key="CRED4" >
+			<app-value value="&quot;Multicredito&amp;Credito Nomina&amp;Micro Creditos&amp;Prestamo Mercantil|m0695|m1499|MULTICREDITO&quot;" />
+			<description value="MULTICREDITO" />
+		</property>
+		<property key="CRED5" >
+			<app-value value="&quot;Banca Comunitaria|m0696|m1500|BANCA COMUNITARIA&quot;" />
+			<description value="BANCA COMUNITARIA" />
+		</property>
+		<property key="CRED6" >
+			<app-value value="&quot;Pagare|m0697|m1501|PAGARE&quot;" />
+			<description value="PAGARE" />
+		</property>
+		<property key="CRED7" >
+			<app-value value="&quot;Arrendamiento Financiero|m0698|m1502|ARRENDAMIENTO FINANCIERO&quot;" />
+			<description value="ARRENDAMIENTO FINANCIERO" />
+		</property>
+		<property key="CRED8" >
+			<app-value value="&quot;Agropecuario|m0699|m1503|AGROPECUARIO&quot;" />
+			<description value="AGROPECUARIO" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_EtapasSolicitudTDC.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="EtapasSolicitudTDC.tt" />
+		<property key="Codigo" >
+			<app-value value="&quot;Estatus|Audio&quot;" />
+			<description value="" />
+		</property>
+		<property key="0" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Supervisor" />
+		</property>
+		<property key="01" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Recepcion en la oficina" />
+		</property>
+		<property key="02" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Grabacion" />
+		</property>
+		<property key="03" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Pre-evaluacion interna" />
+		</property>
+		<property key="04" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Solic concepto central R" />
+		</property>
+		<property key="05" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="En espera concepto central" />
+		</property>
+		<property key="06" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Aprobacion" />
+		</property>
+		<property key="07" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Internet espera recaudos" />
+		</property>
+		<property key="08" >
+			<app-value value="&quot;EVALUACION|m0680&quot;" />
+			<description value="Asignacion de claves" />
+		</property>
+		<property key="09" >
+			<app-value value="&quot;APROBADA|m0679&quot;" />
+			<description value="Envio realce magnetizac" />
+		</property>
+		<property key="10" >
+			<app-value value="&quot;APROBADA|m0679&quot;" />
+			<description value="Recepcion realce magnetiz" />
+		</property>
+		<property key="11" >
+			<app-value value="&quot;APROBADA|m0679&quot;" />
+			<description value="Despacho oficina" />
+		</property>
+		<property key="12" >
+			<app-value value="&quot;APROBADA|m0679&quot;" />
+			<description value="Recibido oficina RADICAD" />
+		</property>
+		<property key="13" >
+			<app-value value="&quot;APROBADA|m0679&quot;" />
+			<description value="Entregadas al agente" />
+		</property>
+		<property key="14" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Recepcion cliente" />
+		</property>
+		<property key="15" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Etapas cumplidas" />
+		</property>
+		<property key="19" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Realce manual" />
+		</property>
+		<property key="20" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Envio acuse recibo" />
+		</property>
+		<property key="21" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="En proceso acuse recibo" />
+		</property>
+		<property key="26" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Captura informacion adicional" />
+		</property>
+		<property key="27" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Calificacion solicitud" />
+		</property>
+		<property key="8A" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Envio a servibanca" />
+		</property>
+		<property key="8B" >
+			<app-value value="&quot;APROBADA_ENVIADA|m0681&quot;" />
+			<description value="Incorporacion claves" />
+		</property>
+		<property key="97" >
+			<app-value value="&quot;NEGADA|m0682&quot;" />
+			<description value="Negadas parciales" />
+		</property>
+		<property key="98" >
+			<app-value value="&quot;NEGADA|m0682&quot;" />
+			<description value="Negadas por excepcion" />
+		</property>
+		<property key="99" >
+			<app-value value="&quot;NEGADA|m0682&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_Z1" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_Z2" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_Z5" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_Z8" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_CI" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_RI" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+		<property key="99_ENESPERARECAUDOS" >
+			<app-value value="&quot;CAT|m0515&quot;" />
+			<description value="Solicitud negada" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.engine" domain-type="SERVICE" >
+		<description value="SCXML Engine Core Configuration" />
+		<display-name value="SCXML Engine Core" />
+		<property key="maxAllowedSessionDurationMins" javascript-validators="validateIntegerRange(0, 2147483647);" >
+			<app-value value="1440" />
+			<default-value value="1440" />
+			<description value="Maximum duration in minutes that SCXML Session is allowed to run. (1440 = 1 day; 0 = Unrestricted)" />
+		</property>
+		<property key="loggingPrivacy" javascript-validators="validateBoolean();" >
+			<app-value value="false" />
+			<default-value value="false" />
+			<description value="Set to &apos;true&apos; to disable logging of any data that might be considered private. (Allowed values: true | false)" />
+		</property>
+		<property key="maxServerProcessingTime" >
+			<app-value value="30000" />
+			<default-value value="30000" />
+			<description value="This attribute specifies the maximum IC application Server Processing Time in milliseconds. If the application is using multiple consecutive external data accesses before doing the next interaction, then the time should be set the sum of all those timeouts for external data access. " />
+		</property>
+		<property key="maxServerProcessingTimeAddon" displayable="false" >
+			<app-value value="5000" />
+			<default-value value="5000" />
+			<description value="This attribute specifies the additional time add on to maxServerProcessingTime in milliseconds. It help the application finish consecutive external data accesses finished first before Media Server reach fetchtimeout. " />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.runtime.callcontrol" domain-type="SERVICE" >
+		<description value="Call Control I/O Processor" />
+		<display-name value="Call Control I/O Processor" />
+		<property key="createSessionServiceDefault" >
+			<app-value value="http://localhost:10000/createsession" />
+			<default-value value="http://localhost:10000/createsession" />
+			<description value="HTTP Address of default CCXML/SIP IO Processor" />
+		</property>
+		<property key="callControlBaseURLDefault" must-change="true" >
+			<app-value value="http://localhost:8080/SCEDefault/sceccxml.ccxml" />
+			<default-value value="http://localhost:8080/SCEDefault/sceccxml.ccxml" />
+			<description value="Base URL for SCXML requests - sceccxml.ccxml launches main.scxml by default" />
+		</property>
+	</domain>
+	<domain id="com.intervoice.scxml.uds.client" domain-type="SERVICE" >
+		<description value="Universal Data Store Client" />
+		<display-name value="UDS Client" />
+		<property key="Type" >
+			<app-value value="LOCAL_MAP" />
+			<default-value value="LOCAL_MAP" />
+			<description value="Type of Universal Data Storage" />
+		</property>
+		<property key="URL" displayable="false" >
+			<app-value value="http://localhost:8080/com.intervoice.uds.webservice/services/DataStore" />
+			<default-value value="http://localhost:8080/com.intervoice.uds.webservice/services/DataStore" />
+			<description value="HTTP Address of Web Service Storage" />
+		</property>
+	</domain>
+	<domain id="AS400DebitCardLib_config_tt_TiposPagoCreditos.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="TiposPagoCreditos.tt" />
+		<property key="TipoPago" >
+			<app-value value="&quot;Descripcion|Audio|NoAplica|PresentarPago&quot;" />
+			<description value="Tipos de Pago" />
+		</property>
+		<property key="Pago1" >
+			<app-value value="&quot;PAGO DE CUOTAS|m0954|EXTRACREDITO|S&quot;" />
+			<description value="Pago de Cuotas Vencidas" />
+		</property>
+		<property key="Pago2" >
+			<app-value value="&quot;AMORTIZACI|m0952||S&quot;" />
+			<description value="Amortizacion" />
+		</property>
+		<property key="Pago3" >
+			<app-value value="&quot;TOTAL DEL CR|m0953||S&quot;" />
+			<description value="Cancelacion Total deL Credito" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx1.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx1.bh" />
+		<property key="Mon" >
+			<app-value value="00:00-23:59" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="00:00-23:59" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="00:00-23:59" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="00:00-23:59" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="00:00-23:59" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="00:00-23:59" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="00:00-23:59" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_AS400ConfiguracionCreditCard.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="AS400ConfiguracionCreditCard.tt" />
+		<property key="Periodo_Maximo_Validez_Solicitud_TDC" >
+			<app-value value="90" />
+			<description value="Numero maximo de dias anteriores validos para tomar los registros de estatus de solicitud de TDC" />
+		</property>
+		<property key="Bloqueo_Suspender_TDC" >
+			<app-value value="&quot;T|F|V|I|Q|U|H|Y|L|C|E|D|K|G|N|Z|W|R|X|$&quot;" />
+			<description value="No Procesadas" />
+		</property>
+		<property key="Rango_Bin" >
+			<app-value value="&quot;6-7&quot;" />
+			<description value="Rango de digitos iniciales para la validacion del bin" />
+		</property>
+		<property key="Extracredito_Compras" >
+			<app-value value="8964" />
+			<description value="Codigo para consultar Extracredito_Compra" />
+		</property>
+		<property key="Extracredito_Efectivo" >
+			<app-value value="8962" />
+			<description value="Codigo para consultar Extracredito_Efectivo" />
+		</property>
+		<property key="Periodo_Dias_Pin_Definitivo" >
+			<app-value value="3" />
+			<description value="Periodo de dias que el cliente tiene para generar PIN definitivo" />
+		</property>
+		<property key="Detalle_TDC_Generar_Pin" >
+			<oamp-value value="true" />
+			<app-value value="true" />
+			<description value="true o false. Indica si se ejecutara o no la invocacion al metodo ReadCreditCardDetails" />
+		</property>
+		<property key="Mensaje_Autorizaciones" >
+			<app-value value="&quot;m0164&quot;" />
+			<description value="Audio para Transferencia Autorizaciones para Extracredito Efectivo" />
+		</property>
+		<property key="Tipo_Documento_ExtraCredito_Efectivo" >
+			<app-value value="&quot;CI&quot;" />
+			<description value="&quot;CI&quot;; &quot;RIF&quot;; &quot;CI_RIF&quot; Tipo de persona valida para la transaccion" />
+		</property>
+		<property key="Estado_Invalido_ConsultaSaldoTDC" >
+			<oamp-value value="&quot;T|F|V|I|Q|U|H|Y|L|C|E|D|K|G|N|Z|W|R|X&quot;" />
+			<app-value value="&quot;F|L|V&quot;" />
+			<description value="Estado invalidos para realizar Consulta de Saldo TDC" />
+		</property>
+		<property key="Minimo_ExtraCredCompra" >
+			<app-value value="&quot;10.00&quot;" />
+			<description value="Monto minimo del ExtraCredito Compra" />
+		</property>
+		<property key="Min_AutorizarTDC_ComerAfiliado" >
+			<app-value value="&quot;10.00&quot;" />
+			<description value="Monto minimo para Autorizar TDC en Comercio Afiliado" />
+		</property>
+		<property key="Max_AutorizarTDC_ComerAfiliado" >
+			<oamp-value value="&quot;100000000.00&quot;" />
+			<app-value value="&quot;100000.00&quot;" />
+			<description value="Monto maximo para Autorizar TDC en Comercio Afiliado" />
+		</property>
+		<property key="Intentos_MensajesESATPPV2" >
+			<oamp-value value="5" />
+			<app-value value="5" />
+			<description value="Numero max de mensajes a manejar en la pantalla ESATPPV2" />
+		</property>
+		<property key="Min_AutorizarTDC_AgenciaViajes" >
+			<app-value value="&quot;10.00&quot;" />
+			<description value="Monto minimo para Autorizar TDC para Agencia de Viajes" />
+		</property>
+		<property key="Max_AutorizarTDC_AgenciaViajes" >
+			<oamp-value value="&quot;100000000.00&quot;" />
+			<app-value value="&quot;100000.00&quot;" />
+			<description value="Monto maximo para Autorizar TDC para Agencia de Viajes" />
+		</property>
+		<property key="TransferirMonitoreoTDC" >
+			<oamp-value value="false" />
+			<app-value value="true" />
+			<description value="Control de transferencia para suspender TDC por consumo no reconocido" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_Centro.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Centro.tt" />
+		<property key="Call_Manager_IP" >
+			<app-value value="&quot;10.132.69.30&quot;" />
+			<description value="IP del Call Manager" />
+		</property>
+		<property key="Timeout_Captura_Datos" >
+			<oamp-value value="&quot;5.0s&quot;" />
+			<app-value value="&quot;10.0s&quot;" />
+			<description value="XX.Xs Tiempo maximo en segundos que esperara el IVR por la insercion de datos" />
+		</property>
+		<property key="Mensaje_Despedida" >
+			<app-value value="&quot;m0188&quot;" />
+			<description value="mXXXX.wav Mensaje de despedida general del centro" />
+		</property>
+		<property key="Extension_CAT" >
+			<oamp-value value="&quot;5979910&quot;" />
+			<app-value value="&quot;1414&quot;" />
+			<description value="XXXX Numero de la extension configurada para el CAT" />
+		</property>
+		<property key="Ext_Banesco_Movil" >
+			<oamp-value value="&quot;&quot;" />
+			<app-value value="&quot;1414&quot;" />
+			<description value="XXXX Numero de la extension configurada para Banesco Movil" />
+		</property>
+		<property key="Ext_Monitoreo" >
+			<oamp-value value="&quot;5021025&quot;" />
+			<app-value value="&quot;1025&quot;" />
+			<description value="XXXX Numero de la extension configurada para monitoreo" />
+		</property>
+		<property key="Ext_Autorizaciones" >
+			<oamp-value value="&quot;5979910&quot;" />
+			<app-value value="&quot;45280&quot;" />
+			<description value="XXXX Numero de la extension configurada para el centro de autorizaciones" />
+		</property>
+		<property key="Longitud_TDC" >
+			<app-value value="&quot;15|16&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de TDC" />
+		</property>
+		<property key="Longitud_TDD" >
+			<app-value value="&quot;16|16&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de TDD" />
+		</property>
+		<property key="Longitud_CTA" >
+			<app-value value="&quot;20|20&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de Cuentas" />
+		</property>
+		<property key="Longitud_ID" >
+			<oamp-value value="&quot;6|9&quot;" />
+			<app-value value="&quot;1|9&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de Nro de ID del Cliente" />
+		</property>
+		<property key="Longitud_CVV2" >
+			<app-value value="&quot;3|3&quot;" />
+			<description value="Longitud Minima|Longitud Maxima del Codigo de Seguridad TDC" />
+		</property>
+		<property key="Mensajes_Bienvenida" >
+			<oamp-value value="&quot;m0827&quot;" />
+			<app-value value="&quot;m0827|m1108&quot;" />
+			<description value="mXXXX.wav|mXXXX.wav Mensajes de bienvenida del centro" />
+		</property>
+		<property key="Duracion_Maxima_Llamada_Normal" >
+			<app-value value="600" />
+			<description value="Tiempo de duracion en segundos maximo para una llamada en ambiente normal" />
+		</property>
+		<property key="Duracion_Maxima_Llamada_Nocturno" >
+			<app-value value="300" />
+			<description value="Tiempo de duracion en segundos maximo para una llamada en ambiente nocturno" />
+		</property>
+		<property key="Segmentos_Validos_Ingreso" >
+			<oamp-value value="&quot;PLA_ATC_PRE&quot;" />
+			<app-value value="&quot;PLA_ATC_PRE&quot;" />
+			<description value="Segmentos validos para el ingreso a la aplicacion. Combinar PRE, PLA o ATC separado por _" />
+		</property>
+		<property key="Prioridad_Segmentos" >
+			<app-value value="&quot;PRE|PLA|ATC&quot;" />
+			<description value="En el orden que se definen se establece la prioridad al momento de ingresar a la aplicacion. Separador |" />
+		</property>
+		<property key="Segmentos_Invalidos_BancaPrivada" >
+			<app-value value="&quot;PLA&quot;" />
+			<description value="Segmentos que no permiten validar Banca Privada. Separador _" />
+		</property>
+		<property key="Segmento_Banca_Privada" >
+			<app-value value="&quot;PRE&quot;" />
+			<description value="Segmento asignado a cliente de Banca Privada" />
+		</property>
+		<property key="Iniciales_Codigo_Oficial" >
+			<app-value value="&quot;W_P&quot;" />
+			<description value="Letras iniciales del codigo del oficial de Banca Privada. Separador _" />
+		</property>
+		<property key="Validacion_Banca_Privada" >
+			<app-value value="true" />
+			<description value="Indica si se ejecutara o no la validacion de si el cliente pertenece a la Banca Privada" />
+		</property>
+		<property key="Todas_Cuentas_Banca_Privada" >
+			<app-value value="false" />
+			<description value="Indica si se revisaran todas las cuentas o solo la primera que cumpla con los requisitos" />
+		</property>
+		<property key="Gestion_Bloqueo_TDD" >
+			<app-value value="true" />
+			<description value="Indica si esta encendida o no la gestion de bloqueo de TDD" />
+		</property>
+		<property key="Gestion_Bloqueo_TDC" >
+			<app-value value="true" />
+			<description value="Indica si esta encendida o no la gestion de bloqueo de TDC" />
+		</property>
+		<property key="Longitud_Telef" >
+			<app-value value="&quot;9|10&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de numero de telefono" />
+		</property>
+		<property key="MontoMin_TransferenciasCuentasT" >
+			<oamp-value value="&quot;0.01&quot;" />
+			<app-value value="&quot;1.00&quot;" />
+			<description value="Monto Minimo permitido para transferencias entre cuentas" />
+		</property>
+		<property key="MontoMax_TransferenciasCuentasT" >
+			<oamp-value value="&quot;10000000000000000.00&quot;" />
+			<app-value value="&quot;100000000.00&quot;" />
+			<description value="Monto Maximo permitido para transferencias entre cuentas" />
+		</property>
+		<property key="Longitud_AFILCOMER_ID" >
+			<app-value value="&quot;1|10&quot;" />
+			<description value="Longitud Minima|Longitud Maxima de Nro de Afiliacion para un Comercio" />
+		</property>
+		<property key="Entrada_Movistar_Activo" >
+			<oamp-value value="true" />
+			<app-value value="true" />
+			<description value="Indica si se debe comprobar el ingreso de una llamada Movistar para RecargaPagoMovistar" />
+		</property>
+		<property key="DNIS_Movistar" >
+			<oamp-value value="&quot;1166&quot;" />
+			<app-value value="&quot;1166&quot;" />
+			<description value="DNIS llamada Movistar para RecargaPagoMovistar" />
+		</property>
+		<property key="Mensajes_Bienvenida_Movistar" >
+			<app-value value="&quot;m0827|m1108&quot;" />
+			<description value="mXXXX.wav|mXXXX.wav Mensajes de bienvenida de Movistar para RecargaPagoMovistar" />
+		</property>
+		<property key="Mensaje_Despedida_Movistar" >
+			<app-value value="&quot;m0188&quot;" />
+			<description value="mXXXX.wav Mensaje de despedida general de Movistar para RecargaPagoMovistar" />
+		</property>
+		<property key="Ext_46309COE" >
+			<oamp-value value="&quot;5979911&quot;" />
+			<app-value value="&quot;59044419&quot;" />
+			<description value="XXXX Numero de la extension configurada para ext_46309 COE" />
+		</property>
+		<property key="Mensaje_Cumple" >
+			<app-value value="&quot;m1505&quot;" />
+			<description value="mXXXX audio a reproducir en caso de que el cliente este de cumpleanios" />
+		</property>
+		<property key="Entrada_GenerarPin_Activo" >
+			<app-value value="true" />
+			<description value="Indica si se debe comprobar el ingreso de una llamada para Generar PIN TDC y TDD al regresar del CAT" />
+		</property>
+		<property key="DNIS_GenerarPin" >
+			<oamp-value value="&quot;45090&quot;" />
+			<app-value value="&quot;1167&quot;" />
+			<description value="DNIS llamada para Generar PIN TDC y TDD al regresar del CAT" />
+		</property>
+		<property key="Mensajes_Bienvenida_GenerarPin" >
+			<app-value value="&quot;m0776|0&quot;" />
+			<description value="mXXXX.wav|mXXXX.wav Mensajes de bienvenida para Generar PIN TDC y TDD al regresar del CAT" />
+		</property>
+		<property key="Mensaje_Despedida_GenerarPin" >
+			<app-value value="&quot;m0188&quot;" />
+			<description value="mXXXX.wav Mensaje de despedida general para Generar PIN TDC y TDD al regresar del CAT" />
+		</property>
+		<property key="Validar_TDC_GenerarPIN_CAT" >
+			<app-value value="&quot;6|m1514&quot;" />
+			<description value="Cantidad de Digitos y Audio a reproducir para solicitar TDC en Generar PIN al regresar del CAT" />
+		</property>
+		<property key="Validar_TDD_GenerarPIN_CAT" >
+			<app-value value="&quot;6|m1515&quot;" />
+			<description value="Cantidad de Digitos y Audio a reproducir para solicitar TDD en Generar PIN al regresar del CAT" />
+		</property>
+	</domain>
+	<domain id="GeneralLib_config_tt_Segmentos.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="Segmentos.tt" />
+		<property key="ATC" >
+			<app-value value="&quot;m1420&amp;m1418&quot;" />
+			<description value="Mensajes de despedida cuando el cliente pertenece al centro ATC pero no puede ingresar al aplicativo" />
+		</property>
+		<property key="PRE" >
+			<app-value value="&quot;m1420&amp;m1416&quot;" />
+			<description value="Mensajes de despedida cuando el cliente pertenece al centro PRE pero no puede ingresar al aplicativo" />
+		</property>
+		<property key="PLA" >
+			<app-value value="&quot;m1420&amp;m1417&quot;" />
+			<description value="Mensajes de despedida cuando el cliente pertenece al centro PLA pero no puede ingresar al aplicativo" />
+		</property>
+	</domain>
+	<domain id="AS400GeneralLib_config_bh_HorarioTx5.bh" domain-type="BH" >
+		<description value="ICS Business Hours Configuration" />
+		<display-name value="HorarioTx5.bh" />
+		<property key="Mon" >
+			<app-value value="04:00-23:45" />
+			<description value="Monday" />
+		</property>
+		<property key="Tue" >
+			<app-value value="04:00-23:45" />
+			<description value="Tuesday" />
+		</property>
+		<property key="Wed" >
+			<app-value value="04:00-23:45" />
+			<description value="Wednesday" />
+		</property>
+		<property key="Thu" >
+			<app-value value="04:00-23:45" />
+			<description value="Thursday" />
+		</property>
+		<property key="Fri" >
+			<app-value value="04:00-23:45" />
+			<description value="Friday" />
+		</property>
+		<property key="Sat" >
+			<app-value value="04:00-23:45" />
+			<description value="Saturday" />
+		</property>
+		<property key="Sun" >
+			<app-value value="04:00-23:45" />
+			<description value="Sunday" />
+		</property>
+	</domain>
+	<domain id="AS400CreditCardLib_config_tt_EstadoPagoTDC.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="EstadoPagoTDC.tt" />
+		<property key="Estado" >
+			<app-value value="&quot;Prioridad&quot;" />
+			<description value="Tipo" />
+		</property>
+		<property key="NORMAL" >
+			<app-value value="1" />
+			<description value="" />
+		</property>
+		<property key="M" >
+			<app-value value="1" />
+			<description value="Preventivo" />
+		</property>
+		<property key="S" >
+			<app-value value="1" />
+			<description value="Preventivo" />
+		</property>
+		<property key="O" >
+			<app-value value="1" />
+			<description value="Preventivo" />
+		</property>
+		<property key="0" >
+			<app-value value="1" />
+			<description value="N o numeral Preventivo" />
+		</property>
+		<property key="B" >
+			<app-value value="1" />
+			<description value="Preventivo" />
+		</property>
+		<property key="P" >
+			<app-value value="1" />
+			<description value="Preventivo" />
+		</property>
+		<property key="F" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="V" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="I" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="Q" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="U" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="Y" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="L" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="C" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="D" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="J" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="G" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="A" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+		<property key="Z" >
+			<app-value value="2" />
+			<description value="Cancelatorio" />
+		</property>
+	</domain>
+	<domain id="AutenticationLib_config_tt_communityBankingProducts.tt" domain-type="TT" >
+		<description value="ICS Translate Table" />
+		<display-name value="communityBankingProducts.tt" />
+		<property key="ProductId_1047" >
+			<app-value value="&quot;Cta_1047&quot;" />
+			<description value="" />
+		</property>
+		<property key="ProductId_1048" >
+			<app-value value="&quot;Cta Operativa_1048&quot;" />
+			<description value="" />
+		</property>
+		<property key="ProductId_1101" >
+			<app-value value="&quot;CtaCte_1101&quot;" />
+			<description value="" />
+		</property>
+		<property key="ProductId_1102" >
+			<app-value value="&quot;Cta Juridico_1102&quot;" />
+			<description value="" />
+		</property>
+		<property key="ProductId_3047" >
+			<app-value value="&quot;Paso a Paso_3047&quot;" />
+			<description value="" />
+		</property>
+	</domain>
+</domains>
